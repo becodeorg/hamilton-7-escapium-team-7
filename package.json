@@ -1,0 +1,23 @@
+{
+  "name": "hamilton-7-escapium-team-7",
+  "version": "1.0.0",
+  "description": "| Challenge Parameters | Challenge Details  |\r | :------------------- | :----------------- |\r | Repository           | `Escapium`         |\r | Challenge type       | `Consolidation`    |\r | Duration             | `5 days`           |\r | Deadline             | `04/11/2022 17h00` |\r | Deployment method    | `GitHub pages`     |\r | Group composition    | `Trio`             |",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/becodeorg/hamilton-7-escapium-team-7.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/becodeorg/hamilton-7-escapium-team-7/issues"
+  },
+  "homepage": "https://github.com/becodeorg/hamilton-7-escapium-team-7#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
