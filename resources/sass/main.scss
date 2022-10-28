@@ -1,9 +1,9 @@
 //util
 
-@use "util/variables" as *;
-@use "util/functions" as *;
-@use "util/mixins" as *;
-@use "util/placeholders" as *;
+@import "Utils/variables.scss";
+@import "Utils/functions.scss";
+@import "Utils/mixins.scss";
+@import "Utils/placeholders.scss";
 
 //vendors
 
@@ -12,6 +12,7 @@
 //components
 
 //layout
+@import "./Layout/footer.scss";
 
 //pages
 

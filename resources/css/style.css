@@ -1,0 +1,18 @@
+.footer {
+  color: #717171;
+}
+.footer__h3 {
+  color: white;
+}
+.footer__part1 {
+  background-color: #222222;
+}
+.footer__part2 {
+  background-color: #1B1B1B;
+}
+.footer__img {
+  width: 2em;
+  height: 2em;
+}
+
+/*# sourceMappingURL=style.css.map */

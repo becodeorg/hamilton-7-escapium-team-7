@@ -1,0 +1,15 @@
+
+.footer{
+    color: #717171;
+    &__h3{
+        color: white;
+    }
+    &__part{
+        &1{background-color: #222222;}
+        &2{background-color: #1B1B1B;}
+    }
+    &__img{
+        width: 2em;
+        height: 2em;
+    }
+}
