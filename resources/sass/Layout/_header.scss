@@ -1,0 +1,50 @@
+.header
+{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 15.6rem;
+    
+    &__nav
+    {
+        background-color: black;
+        height: 3rem;
+    }
+    &__body
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 12.6rem;
+
+        &__title
+        {
+            width: 6em;
+            color: white;
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            // padding-top: 2rem;
+        }
+        &__subtitle
+        {
+            text-transform: uppercase;
+            width: 10em;
+            color: white;
+            font-size: 1rem;
+            font-weight: 400;
+            text-align: center;
+            padding-top: 2em;
+            margin: 0;
+            // padding-top: 2rem;
+        }
+    }
+    &--main
+    {
+        background-image:   linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),url('../resources/images/gallery/slide-4.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 15.6rem;
+    }
+}

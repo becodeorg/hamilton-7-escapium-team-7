@@ -1,18 +1,23 @@
 //util
 
-@use "util/variables" as *;
-@use "util/functions" as *;
-@use "util/mixins" as *;
-@use "util/placeholders" as *;
+@use "./Utils/variables.scss" as *;
+@use "./Utils/functions.scss" as *;
+@use "./Utils/mixins.scss" as *;
+@use "./Utils/placeholders.scss" as *;
 
 //vendors
 
 //base
 
+@use "./Base/normalize.scss" as *;
+@use "./Base/reset.scss" as *;
+@use "./Base/typography.scss" as *;
+
 //components
 
 //layout
 
+@use "./Layout/header.scss" as *;
 //pages
 
 //themes
