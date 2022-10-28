@@ -1,9 +1,9 @@
 //util
 
-@use "util/variables" as *;
-@use "util/functions" as *;
-@use "util/mixins" as *;
-@use "util/placeholders" as *;
+@import "../sass/Utils/variables";
+@import "./Utils/functions";
+@import "./Utils/mixins";
+@import "./Utils/mixins";
 
 //vendors
 
@@ -12,6 +12,8 @@
 //components
 
 //layout
+
+@use "./Layout/"
 
 //pages
 

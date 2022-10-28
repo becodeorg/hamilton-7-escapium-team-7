@@ -1,0 +1,147 @@
+@import "../Utils/variables";
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: $darkestBackground;
+    
+    .fa-times {
+        display: none;
+        color: white;
+        position: absolute;
+        left: 23.2rem;
+        top: 0.5rem;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        background-color: $darkBackground;
+        height: 5%;
+
+        img {
+            width: 12rem;
+        }
+
+        .navigation__ul {
+            display: none;
+            list-style: none;
+            color: white;
+            width: 30rem;
+            margin-left: -27px;
+        }
+
+        .navigation__button {
+            display:none;
+            background-color: darkBackground;
+            padding: 0.3rem;
+            color: white;
+            text-decoration: none;
+            border: solid 0.1em white;
+            height: 1.0em;
+            position: absolute;
+            top: 1.2em;
+            right: 2em;
+            border-radius: 1em;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+
+        .fa-bars {
+            color: white;
+            position: absolute;
+            left: 23rem;
+            top: 0.7rem;
+        }
+
+
+    }
+   
+
+
+}
+
+
+
+
+@media (min-width: 768px) {
+    .fa-bars {
+        position: absolute;
+        left: 45rem!important;
+        top: 0.7rem!important;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+}}
+
+@media (min-width: 1200px) {
+    .fa-bars {
+        display: none!important;
+    }
+    .navigation__ul {
+        display:flex!important;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        
+        
+
+        li {
+            padding-top: 0.5em;
+        }
+        
+
+    }
+
+    .fa-spinner {
+        display: block!important;
+        position: absolute;
+    }
+
+    .navigation__button {
+        display: block!important;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+// .navigation {
+//     height: 100%;
+//     width: 80%;
+//     
+//     color: white;
+//     margin: 0;
+//     display: flex;
+//     flex-direction: column;
+
+    
+    
+//     .navigation__ul {
+//         display: none;
+//         margin: 0;
+//         display: flex;
+//         flex-direction: column;
+
+//         li  {
+//             font-family: $paragraphs-font;
+//             padding-left: 1.5rem;
+//             padding-bottom: 1rem;
+//             padding-top: 1rem;
+//             border-top: solid 0.01px $navFontColor;
+//             border-bottom: dotted 0.01px $navFontColor;
+//             list-style: none;
+//             margin: 0;
+//         }
+//     }
+    
+// }

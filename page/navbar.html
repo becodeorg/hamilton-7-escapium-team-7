@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../resources/sass/Layout/navigation.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+<body>
+    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+    <nav class="navigation">
+        <img src="../resources/resources/images/logo/logo.png" alt="">
+        <ul class="navigation__ul">
+            <li>Home</li>
+            <li>About</li>
+            <li>Features</li>
+            <li>Rooms</li>
+            <li>Booking</li>
+            <li>Blog</li>
+            <li>Contacts</li>
+            <li><i class="fa fa-address-book-o" aria-hidden="true"></i> Sign in</li>
+        </ul>
+        <a href="#" class="navigation__button">Book Now!</a>
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </nav>
+
+    <script>
+        const menuHamburger = document.querySelector(".fa-bars");
+        const navLinks = document.querySelector("ul");
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('navigation__ul')
+        })
+    </script>
+</body>
+</html>
