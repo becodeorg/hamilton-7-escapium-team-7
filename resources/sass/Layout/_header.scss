@@ -1,12 +1,9 @@
 .header
 {
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 15.6rem;
     
     &__nav
     {
-        background-color: black;
+        background-color: $red;
         height: 3rem;
     }
     &__body
@@ -27,24 +24,101 @@
             margin: 0;
             // padding-top: 2rem;
         }
-        &__subtitle
+        &__div
         {
-            text-transform: uppercase;
-            width: 10em;
-            color: white;
-            font-size: 1rem;
-            font-weight: 400;
-            text-align: center;
             padding-top: 2em;
-            margin: 0;
-            // padding-top: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            &__subtitle
+            {
+                text-transform: uppercase;
+                width: 10em;
+                color: white;
+                font-size: 1rem;
+                font-weight: 400;
+                text-align: center;
+                margin: 0;
+                // padding-top: 2rem;
+
+                display: flex;
+                flex-direction: row;
+            } 
+            &__line
+            {
+                display: none;
+            }
         }
+        
     }
     &--main
     {
         background-image:   linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),url('../resources/images/gallery/slide-4.jpg');
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
-        height: 15.6rem;
+    }
+    @media only screen and (min-width: $tablet)
+    {
+        height: 29.1rem;
+        &__body
+        {
+            height: 25rem;
+            &__title
+            {
+                font-size: 3rem;
+            }
+            &__div
+            {
+                &__subtitle
+                {
+                    font-size: 0.8rem;
+
+                }
+                &__line
+                {
+                    display: block;
+                    width: 3.5em;
+                    height: 1px;
+                    background-color: white;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: $desktop)
+    {
+        height: 70rem;
+        &__body
+        {
+            height: 60rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 10rem;
+            &__title
+            {
+                text-align: left;
+                font-size: 10rem;
+            }
+            &__div
+            {
+                &__subtitle
+                {
+                    font-size: 1rem;
+
+                }
+                &__line
+                {
+                    display: block;
+                    width: 5em;
+                    height: 1px;
+                    background-color: white;
+                    margin-right: 1rem;
+                }
+            }
+        }
     }
 }

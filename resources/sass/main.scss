@@ -1,23 +1,23 @@
 //util
 
-@use "./Utils/variables.scss" as *;
-@use "./Utils/functions.scss" as *;
-@use "./Utils/mixins.scss" as *;
-@use "./Utils/placeholders.scss" as *;
+@import "./Utils/variables";
+@import "./Utils/functions.scss";
+@import "./Utils/mixins.scss";
+@import "./Utils/placeholders.scss";
 
 //vendors
 
 //base
 
-@use "./Base/normalize.scss" as *;
-@use "./Base/reset.scss" as *;
-@use "./Base/typography.scss" as *;
+@import "./Base/normalize.scss";
+@import "./Base/reset.scss";
+@import "./Base/typography.scss";
 
 //components
 
 //layout
 
-@use "./Layout/header.scss" as *;
+@import "./Layout/header.scss";
 //pages
 
 //themes
