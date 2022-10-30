@@ -6,34 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../resources/sass/Layout/navigation.css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="../resources/sass/style.css">
 </head>
 <body>
-    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
     <nav class="navigation">
-        <img src="../resources/resources/images/logo/logo.png" alt="">
+        <img src="../resources/resources/images/logo/logo.png" alt="" class="navigation__logo">
         <ul class="navigation__ul">
-            <li>Home</li>
-            <li>About</li>
-            <li>Features</li>
-            <li>Rooms</li>
-            <li>Booking</li>
-            <li>Blog</li>
-            <li>Contacts</li>
-            <li><i class="fa fa-address-book-o" aria-hidden="true"></i> Sign in</li>
+            <li class="navigation__ul--clicked"><span class="linethrough"></span>home</li>
+            <li>about</li>
+            <li>features</li>
+            <li>rooms</li>
+            <li>booking</li>
+            <li>blog</li>
+            <li>contacts</li>
+            <li class="navigation__ul--sidebar"><i class="fa fa-address-book-o" aria-hidden="true"></i> sign in</li>
         </ul>
+        <i class="fa fa-bars fa-2x" aria-hidden="true" onclick="changeIcon(this)"></i>
         <a href="#" class="navigation__button">Book Now!</a>
-        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-    </nav>
+     </nav>
 
     <script>
-        const menuHamburger = document.querySelector(".fa-bars");
+        let menuHamburger = document.querySelector(".fa-bars");
         const navLinks = document.querySelector("ul");
- 
+        const logo = document.querySelector(".navigation__logo");
+        const hidden = document.querySelector(".navigation__ul--sidebar");
+        const line = document.querySelector(".linethrough");
+        
+        function changeIcon(icon) {
+            icon.classList.toggle("fa-times");
+        }
+        
+
         menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('navigation__ul')
+        menuHamburger.classList.add("active");
+        navLinks.classList.toggle('sidebar');
+        logo.classList.toggle('logo');
+        line.style.display= "none";
         })
+
+
+        document.querySelectorAll("li").forEach(n => n.addEventListener("click", () => {
+            menuHamburger.classList.remove("active");
+            navLinks.classList.remove('sidebar');
+            logo.classList.remove('logo');
+            line.style.display= "block";
+        }
+        ))
+
+    
     </script>
 </body>
 </html>

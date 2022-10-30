@@ -5,6 +5,7 @@
 @import "./Utils/mixins";
 @import "./Utils/mixins";
 
+
 //vendors
 
 //base
@@ -13,7 +14,7 @@
 
 //layout
 
-@use "./Layout/"
+@import "./Layout/navigation";
 
 //pages
 
