@@ -1,20 +1,28 @@
 //util
 
-@import "../sass/Utils/variables";
-@import "./Utils/functions";
-@import "./Utils/mixins";
-@import "./Utils/mixins";
+
+@import "./Utils/variables";
+@import "./Utils/functions.scss";
+@import "./Utils/mixins.scss";
+@import "./Utils/placeholders.scss";
 
 
 //vendors
 
 //base
 
+@import "./Base/normalize.scss";
+@import "./Base/reset.scss";
+@import "./Base/typography.scss";
+
 //components
 
 //layout
 
+
 @import "./Layout/navigation";
+
+@import "./Layout/header.scss";
 
 //pages
 
