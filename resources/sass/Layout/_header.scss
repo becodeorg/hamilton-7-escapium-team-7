@@ -1,9 +1,13 @@
 .header
 {
+    background-image:  url('../resources/images/gallery/slide-4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     
     &__nav
     {
         background-color: $red;
+        opacity: 0.5;
         height: 3rem;
     }
     &__body

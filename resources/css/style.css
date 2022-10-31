@@ -393,8 +393,14 @@ body {
   min-height: 100vh;
 }
 
+.header {
+  background-image: url("../resources/images/gallery/slide-4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .header__nav {
   background-color: #F60B0E;
+  opacity: 0.5;
   height: 3rem;
 }
 .header__body {
