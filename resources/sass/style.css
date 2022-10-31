@@ -1,8 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@media (max-width: 412px) {
+  .navigation {
+    height: 3rem;
+  }
+  .navigation__logo {
+    width: 7rem;
+    height: 3rem;
+  }
+  .navigation__button {
+    left: -99px;
+  }
+  .navigation__burger {
+    left: 22rem;
+    top: 0.5rem;
+  }
+}
 body {
   height: 100vh;
   margin: 0;
-  background-color: #1B1B1B;
+  background-color: white;
+  width: 100vw;
 }
 body .navigation {
   display: flex;
@@ -10,9 +27,6 @@ body .navigation {
   background-color: #222222;
   height: 5rem;
   width: 100%;
-}
-body .navigation .navigation__logo {
-  width: 12rem;
 }
 body .navigation .navigation__ul {
   display: flex;
@@ -50,14 +64,14 @@ body .navigation .navigation__button {
   border: solid 0.1em lightgray;
   height: 1em;
   position: absolute;
-  top: 2.9em;
-  left: 84em;
+  top: 0.9em;
+  left: 105em;
   border-radius: 2em;
   padding-left: 1.7em;
   padding-right: 1.7em;
   padding-top: 0.9em;
   padding-bottom: 0.9em;
-  font-size: x-small;
+  font-size: medium;
   font-weight: bolder;
 }
 body .navigation .navigation__burger {
@@ -78,8 +92,13 @@ body .navigation .navigation__burger .bar {
 }
 
 @media (max-width: 768px) {
+  .navigation__logo {
+    width: 25%;
+  }
   .navigation__burger {
     display: block !important;
+    left: 43.5rem;
+    top: 1.5rem;
   }
   .navigation__burger .nav-open.bar--top {
     transform: translate(0, 0) rotate(45deg);
@@ -89,6 +108,9 @@ body .navigation .navigation__burger .bar {
   }
   .navigation__burger .nav-open.bar--bot {
     transform: translate(0, 0) rotate(-45deg);
+  }
+  .navigation__button {
+    left: -20em !important;
   }
   .navigation__ul {
     display: flex;
@@ -114,7 +136,7 @@ body .navigation .navigation__burger .bar {
     font-family: "Montserrat";
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 1920px) {
   .navigation__ul {
     display: flex;
     flex-direction: row;

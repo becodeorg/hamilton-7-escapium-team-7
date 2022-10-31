@@ -1,10 +1,36 @@
 @import "../Utils/variables";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+
+@media (max-width: 412px){
+
+    .navigation{
+        height:3rem;
+    }
+    .navigation__logo {
+        width: 7rem;
+        height: 3rem;
+    }
+
+    .navigation__button {
+        left: -99px;
+    }
+
+    .navigation__burger {
+        left: 22rem;
+        top: 0.5rem;
+    }
+
+    
+}
+
+
+
 body {
     height: 100vh;
     margin: 0;
-    background-color: $darkestBackground;
+    background-color: white;
+    width: 100vw;
     
     
 
@@ -15,9 +41,7 @@ body {
         height: 5rem;
         width: 100%;
 
-        .navigation__logo {
-            width: 12rem;
-        }
+    
 
         .navigation__ul {
             display: flex;
@@ -67,14 +91,14 @@ body {
             border: solid 0.1em lightgray;
             height: 1.0em;
             position: absolute;
-            top: 2.9em;
-            left: 84em;
+            top: 0.9em;
+            left: 105em;
             border-radius: 2em;
             padding-left: 1.7em;
             padding-right: 1.7em;
             padding-top: 0.9em;
             padding-bottom: 0.9em;
-            font-size: x-small;
+            font-size: medium;
             font-weight: bolder;
         }
 
@@ -114,8 +138,15 @@ body {
 
 
 @media (max-width: 768px) {
+   
+   .navigation__logo {
+    width: 25%;
+   }
+   
     .navigation__burger {
-        display: block!important;
+        display: block !important;
+    left: 43.5rem;
+    top: 1.5rem;
 
         .nav-open  {
             &.bar--top {
@@ -130,6 +161,10 @@ body {
           }
         
         
+    }
+
+    .navigation__button {
+        left: -20em!important;
     }
 
     .navigation__ul {
@@ -159,7 +194,7 @@ body {
 
    }
 
-@media (min-width: 769px) {
+  @media (min-width: 1920px) {
     
     .navigation__ul {
         display:flex;
@@ -181,10 +216,6 @@ body {
         display: block!important;
     }
     
-}
-
-@media (min-width: 1920px) {
-
 }
 
 
