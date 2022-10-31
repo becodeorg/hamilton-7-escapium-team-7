@@ -1,0 +1,38 @@
+.pagination
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    &__space
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        height: 5rem;
+        margin: 0 0.5rem;
+    }
+    &__item
+    {
+        @extend .pagination__space;
+        border: 1px solid $globalFontColor;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.2s;
+        &:hover
+        {
+            background-color: $globalFontColor;
+        }
+        &--active
+        {
+            background-color: $red;
+            color: $whiteBackground;
+            border: 1px solid $red;
+            &:hover
+            {
+                background-color: $red;
+            }
+        }
+    }
+}
