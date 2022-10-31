@@ -394,6 +394,22 @@ body {
   min-height: 100vh;
 }
 
+.button {
+  background-color: #F60B0E;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 2em;
+  border-radius: 100px;
+  width: 10em;
+  height: 3em;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  background-color: black;
+}
+
 body {
   background-color: #1B1B1B;
   color: #fefefe;
@@ -650,6 +666,40 @@ body {
 }
 .pagination__item--active:hover {
   background-color: #F60B0E;
+}
+
+.description {
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.description__data {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  display: flex;
+  justify-content: space-around;
+}
+.description__text__p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.description__contact {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.description__contact > p:not(input) {
+  border-bottom: 1px solid #777;
+  padding: 1em 0;
 }
 
 /*# sourceMappingURL=style.css.map */

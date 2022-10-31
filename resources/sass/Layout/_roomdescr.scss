@@ -1,0 +1,48 @@
+.description
+{
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+    &__data
+    {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5;
+
+        display: flex;
+        justify-content: space-around
+
+    }
+    &__text
+    {
+        &__p
+        {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+    }
+    &__contact
+    {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5;
+
+
+        >p:not(input)
+        {
+            border-bottom: 1px solid $navFontColor;
+            padding: 1em 0;
+        }
+
+        
+    }
+}
