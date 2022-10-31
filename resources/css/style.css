@@ -396,18 +396,29 @@ body {
 .footer {
   color: #717171;
 }
-.footer__h3 {
-  color: white;
-}
-.footer__part1 {
+.footer__info {
   background-color: #222222;
 }
-.footer__part2 {
-  background-color: #1B1B1B;
+.footer__info__number {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.footer__img {
+.footer__info__redline {
+  border: 2px solid #F60B0E;
+  border-width: 2px;
+  width: 30px;
+}
+.footer__info__h3 {
+  color: white;
+}
+.footer__info__sociallinks__sociallogo {
   width: 2em;
   height: 2em;
+}
+.footer__copyright {
+  text-align: center;
+  background-color: #1B1B1B;
 }
 
 .header__nav {

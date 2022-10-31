@@ -1,15 +1,33 @@
 
 .footer{
     color: #717171;
-    &__h3{
-        color: white;
+
+    &__info{
+        background-color: #222222;
+        &__number{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        &__redline{
+            border: 2px solid $red;
+            border-width: 2px;
+            width: 30px;
+        }
+        &__h3{
+            color: white;
+        }
+        &__sociallinks{
+            &__sociallogo{
+                width: 2em;
+                height: 2em;
+                
+            }
+        }
     }
-    &__part{
-        &1{background-color: #222222;}
-        &2{background-color: #1B1B1B;}
-    }
-    &__img{
-        width: 2em;
-        height: 2em;
+    &__copyright{
+        text-align: center;
+        background-color: #1B1B1B;
     }
 }
+
