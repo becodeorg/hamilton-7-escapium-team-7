@@ -1,0 +1,95 @@
+.rooms
+{
+    &__filter
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 3em;
+
+        &__button
+        {
+            width: 10em;
+            margin: 0.5em 1em;
+            padding: 1em 0.5em;
+            border-radius: 100px;
+            border: 1px solid $globalFontColor;
+            text-align: center;
+            color: $whiteBackground;
+
+            font-size: 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            &:hover
+            {
+                background-color: $red;
+            }
+
+            input
+            {
+                // display: none;
+                visibility: hidden;
+            }
+        }
+    }
+    &__grid
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+        &__item
+        {
+            display: flex;
+            align-items: flex-end;
+            padding: 1rem 1rem;
+            margin: 1em 1em;
+
+            height: 35em;
+            width: 100%;
+
+            background-image: url(../resources/images/gallery/room-2-557x400.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    @media only screen and (min-width: $tablet)
+    {
+        &__filter
+        {
+            &__button
+            {
+                width: 7em;
+                margin: 0.5em 0.5em;
+                padding: 0.5em 0em;
+            }
+        }
+        &__grid
+        {
+            &__item
+            {
+                height: 15em;
+                margin: 1em 0.5em;
+                width: 22%;
+            }
+        }
+    }
+    @media only screen and (min-width: $desktop)
+    {
+        &__grid
+        {
+            margin: 0 20em;
+            &__item
+            {
+                height: 25em;
+                margin: 1em 0.5em;
+                width: 22%;
+            }
+        }
+    }
+        
+}
