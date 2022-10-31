@@ -775,13 +775,13 @@ body {
     font-size: 1em;
   }
 }
-=======
+
 body {
   background-color: #1B1B1B;
   color: #fefefe;
 }
 
->>>>>>> main
+
 .header {
   background-image: url("../resources/images/gallery/slide-1.jpg");
   background-size: cover;
@@ -895,8 +895,7 @@ body {
   }
 }
 
-<<<<<<< HEAD
-=======
+
 .rooms__filter {
   display: flex;
   flex-wrap: wrap;
@@ -1037,5 +1036,5 @@ body {
   background-color: #F60B0E;
 }
 
->>>>>>> main
+
 /*# sourceMappingURL=style.css.map */
