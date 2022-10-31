@@ -395,8 +395,27 @@ body {
 
 .footer {
   color: #717171;
+  /*
+      a:link{
+          color: white;
+          background-color: #717171;
+      }
+      a:visited{
+          color: white;
+          background-color: #717171;
+      }
+      a:hover{
+          color: $red;
+          background-color: white;
+      }
+      i{
+          color: white;
+      }
+  */
 }
 .footer__info {
+  display: flex;
+  flex-direction: column;
   background-color: #222222;
 }
 .footer__info__number {
@@ -412,15 +431,32 @@ body {
 .footer__info__h3 {
   color: white;
 }
-.footer__info__sociallinks__sociallogo {
-  width: 2em;
-  height: 2em;
+.footer__info a {
+  color: white;
+  background-color: #717171;
+  padding: 15px;
+  border-radius: 25px;
+}
+.footer__info__button {
+  color: white;
+}
+.footer__info__button a:link {
+  color: white;
 }
 .footer__copyright {
   text-align: center;
   background-color: #1B1B1B;
 }
 
+.cred {
+  color: red;
+}
+
+/*
+Faire la mise en page de la table
+Faire les li
+ajouter l'image en background
+*/
 .header__nav {
   background-color: #F60B0E;
   height: 3rem;

@@ -2,7 +2,27 @@
 .footer{
     color: #717171;
 
+/*
+    a:link{
+        color: white;
+        background-color: #717171;
+    }
+    a:visited{
+        color: white;
+        background-color: #717171;
+    }
+    a:hover{
+        color: $red;
+        background-color: white;
+    }
+    i{
+        color: white;
+    }
+*/
     &__info{
+        display: flex;
+        flex-direction: column;
+
         background-color: #222222;
         &__number{
             display: flex;
@@ -17,17 +37,34 @@
         &__h3{
             color: white;
         }
-        &__sociallinks{
-            &__sociallogo{
-                width: 2em;
-                height: 2em;
-                
+
+        a{
+            color: white;
+            background-color: #717171;
+            padding: 15px;
+            border-radius: 25px;
+        }
+
+        &__button{
+            color: white;
+            a:link{
+                color: white;
             }
         }
     }
+
     &__copyright{
         text-align: center;
         background-color: #1B1B1B;
     }
 }
 
+.cred{
+    color: red;
+}
+
+/*
+Faire la mise en page de la table
+Faire les li
+ajouter l'image en background
+*/
