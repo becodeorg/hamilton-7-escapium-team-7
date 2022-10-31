@@ -1,19 +1,26 @@
 //util
 
+
 @import "Utils/variables.scss";
 @import "Utils/functions.scss";
 @import "Utils/mixins.scss";
 @import "Utils/placeholders.scss";
 
+
 //vendors
 
 //base
+
+@import "./Base/normalize.scss";
+@import "./Base/reset.scss";
+@import "./Base/typography.scss";
 
 //components
 
 //layout
 @import "./Layout/footer.scss";
 
+@import "./Layout/header.scss";
 //pages
 
 //themes
