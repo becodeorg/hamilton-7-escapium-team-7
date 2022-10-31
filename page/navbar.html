@@ -19,29 +19,33 @@
             <li>booking</li>
             <li>blog</li>
             <li>contacts</li>
-            <li class="navigation__ul--sidebar"><i class="fa fa-address-book-o" aria-hidden="true"></i> sign in</li>
         </ul>
-        <i class="fa fa-bars fa-2x" aria-hidden="true" onclick="changeIcon(this)"></i>
+        <div class="navigation__burger">
+              <span class="bar bar--top"></span>
+              <span class="bar bar--middle"></span>
+              <span class="bar bar--bot"></span>
+          </div>
         <a href="#" class="navigation__button">Book Now!</a>
      </nav>
 
     <script>
-        let menuHamburger = document.querySelector(".fa-bars");
-        const navLinks = document.querySelector("ul");
+        let menuHamburger = document.querySelector(".navigation__burger");
+        const bars = document.querySelectorAll(".bar");
+        const navLinks = document.querySelector(".navigation__ul");
         const logo = document.querySelector(".navigation__logo");
-        const hidden = document.querySelector(".navigation__ul--sidebar");
         const line = document.querySelector(".linethrough");
-        
-        function changeIcon(icon) {
-            icon.classList.toggle("fa-times");
-        }
+
+        console.log(line);
         
 
         menuHamburger.addEventListener('click',()=>{
-        menuHamburger.classList.add("active");
+        menuHamburger.classList.toggle("active");
+        bars[0].classList.toggle('nav-open');
+        bars[1].classList.toggle('nav-open');
+        bars[2].classList.toggle('nav-open');
         navLinks.classList.toggle('sidebar');
         logo.classList.toggle('logo');
-        line.style.display= "none";
+        line.style.display="none";
         })
 
 
