@@ -5,11 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
     <header class="header header--main">
-        <nav class="header__nav"></nav>
+        <nav class="navigation">
+            <img src="../resources/resources/images/logo/logo.png" alt="" class="navigation__logo">
+            <ul class="navigation__ul">
+                <li class="navigation__ul__li clicked"><span class="linethrough"></span>home</li>
+                <li class="navigation__ul__li">about</li>
+                <li class="navigation__ul__li">features</li>
+                <li class="navigation__ul__li">rooms</li>
+                <li class="navigation__ul__li">booking</li>
+                <li class="navigation__ul__li">blog</li>
+                <li class="navigation__ul__li">contacts</li>
+            </ul>
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <div class="navigation__burger">
+                  <span class="bar bar--top"></span>
+                  <span class="bar bar--middle"></span>
+                  <span class="bar bar--bot"></span>
+              </div>
+            <a href="#" class="navigation__button">Book Now!</a>
+         </nav>
         <div class="header__body header__body--main">
             <h1 class="header__body__title header__body__title--main">Escape <br> in 60 mins?</h1>
             <div class="header__body__div">
@@ -20,5 +39,18 @@
         </div>
         
     </header>
+<script>
+    const menuHamburger = document.querySelector(".navigation__burger");
+    const bars = document.querySelectorAll(".bar");
+    const navLinks = document.querySelector(".navigation__ul");
+
+    menuHamburger.addEventListener('click',()=>{
+        menuHamburger.classList.toggle("active");
+        bars[0].classList.toggle('nav-open');
+        bars[1].classList.toggle('nav-open');
+        bars[2].classList.toggle('nav-open');
+        navLinks.classList.toggle('sidebar');
+        })
+</script>
 </body>
 </html>

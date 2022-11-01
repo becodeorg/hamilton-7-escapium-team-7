@@ -1,5 +1,7 @@
 @import "../Utils/variables";
 
+
+
 .about__h1{
     font-size: 0.6em;
     color: white;
@@ -183,7 +185,7 @@
 
 }
 
-@media (min-width: 413px) {
+@media (min-width: 768px) {
 
 
     .about__p {
@@ -232,7 +234,7 @@
 
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1920px) {
     .about__h1{
         font-size: 2em;
         
