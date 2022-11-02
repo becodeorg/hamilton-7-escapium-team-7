@@ -1,9 +1,9 @@
 //util
 
-@import "./Utils/variables";
-@import "./Utils/functions.scss";
-@import "./Utils/mixins.scss";
-@import "./Utils/placeholders.scss";
+@use "./Utils/variables" as variable;
+@use "./Utils/functions.scss" as function;
+@use "./Utils/mixins.scss" as mixin;
+@use "./Utils/placeholders.scss" as placeholder;
 
 //vendors
 

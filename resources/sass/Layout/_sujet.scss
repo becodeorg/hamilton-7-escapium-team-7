@@ -24,7 +24,7 @@
             justify-content: center;
             padding: 1rem;
             // margin: 1rem;
-            background-color: $globalFontColor;
+            background-color: variable.$globalFontColor;
             // border-radius: 1rem;
             box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
             transition: all 0.3s ease-in-out;
@@ -39,7 +39,7 @@
                 &__item
                 {
                     font-size: 1.2rem;
-                    color: $whiteBackground;
+                    color: variable.$whiteBackground;
                 }
             }
             &__title

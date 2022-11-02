@@ -16,7 +16,7 @@
         line-height: 1.5;
 
         display: flex;
-        justify-content: space-around
+        justify-content: space-around;
 
     }
     &__text
@@ -41,12 +41,12 @@
 
         >p:not(input)
         {
-            border-bottom: 1px solid $navFontColor;
+            border-bottom: 1px solid variable.$navFontColor;
             padding: 1em 0;
         }
 
     }
-    @media only screen and (min-width: $tablet)
+    @media only screen and (min-width: variable.$tablet)
     {
         flex-direction: row;
         
@@ -61,7 +61,7 @@
         }
 
     }
-    @media only screen and (min-width: $desktop)
+    @media only screen and (min-width: variable.$desktop)
     {
         width: 75em;
         margin: 0 auto;

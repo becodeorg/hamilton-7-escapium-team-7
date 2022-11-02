@@ -13,9 +13,9 @@
             margin: 0.5em 1em;
             padding: 1em 0.5em;
             border-radius: 100px;
-            border: 1px solid $globalFontColor;
+            border: 1px solid variable.$globalFontColor;
             text-align: center;
-            color: $whiteBackground;
+            color: variable.$whiteBackground;
 
             font-size: 1.5rem;
             font-weight: 700;
@@ -24,16 +24,16 @@
 
             &:hover
             {
-                background-color: $globalFontColor;
+                background-color: variable.$globalFontColor;
             }
             &--active
             {
-                background-color: $red;
-                color: $whiteBackground;
-                border: 1px solid $red;
+                background-color: variable.$red;
+                color: variable.$whiteBackground;
+                border: 1px solid variable.$red;
                 &:hover
                 {
-                    background-color: $red;
+                    background-color: variable.$red;
                 }
             }
 
@@ -74,7 +74,7 @@
                 // width: 100%;
                 // height: 100%;
                 // padding: 1rem 1rem;
-                color: $whiteBackground;
+                color: variable.$whiteBackground;
                 transition: all 0.3s;
                 &__data
                 {
@@ -85,7 +85,7 @@
                     width: 100%;
                     // height: 100%;
                     // padding: 1rem 1rem;
-                    color: $whiteBackground;
+                    color: variable.$whiteBackground;
                     transition: all 0.3s;
                     &__item
                     {
@@ -100,7 +100,7 @@
         }
     }
 
-    @media only screen and (min-width: $tablet)
+    @media only screen and (min-width: variable.$tablet)
     {
         &__filter
         {
@@ -133,7 +133,7 @@
             }
         }
     }
-    @media only screen and (min-width: $desktop)
+    @media only screen and (min-width: variable.$desktop)
     {
         &__grid
         {
@@ -163,9 +163,9 @@
 
 .whiteColor
 {
-    color: $whiteBackground;
+    color: variable.$whiteBackground;
 }
 .redColor
 {
-    color: $red;
+    color: variable.$red;
 }
