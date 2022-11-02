@@ -1,7 +1,6 @@
 .footer{
     color: variable.$globalFontColor; 
     background-color: variable.$darkBackground;
-    color: variable.$whiteBackground;
     background-image: url("../resources/images/gallery/room-7-360x222.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,7 +28,7 @@
             padding-bottom: 3em;
             &__table{
                 border-collapse: separate;
-                border-spacing: 1em 0em;
+                border-spacing: 1em 1em;
                 padding-left: 1em;
             }
         }
@@ -88,17 +87,34 @@
 }
 
 
-@media screen and (max-width: variable.$tablet) {
+@media screen and (min-width: variable.$tablet) {
     .footer{
         &__info{
             display: flex;
             flex-direction: row;
+            justify-content: space-evenly;
             &__sociallinks{
                 &__icons{
                     display: grid;
-                    flex-direction: column;
-                    align-items: center;
+                    grid-template-areas: 
+                    "a b"
+                    "c d"
+                    "e f";
+                }
+            }
+        }
+    }
+}
 
+
+@media screen and (min-width: variable.$desktop) {
+    .footer{
+        &__info{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            &__sociallinks{
+                &__icons{
                     display: grid;
                     grid-template-areas: 
                     "a b"
