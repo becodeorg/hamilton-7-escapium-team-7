@@ -16,22 +16,22 @@
     &__item
     {
         @extend .pagination__space;
-        border: 1px solid $globalFontColor;
+        border: 1px solid variable.$globalFontColor;
         border-radius: 50%;
         cursor: pointer;
         transition: all 0.2s;
         &:hover
         {
-            background-color: $globalFontColor;
+            background-color: variable.$globalFontColor;
         }
         &--active
         {
-            background-color: $red;
-            color: $whiteBackground;
-            border: 1px solid $red;
+            background-color: variable.$red;
+            color: variable.$whiteBackground;
+            border: 1px solid variable.$red;
             &:hover
             {
-                background-color: $red;
+                background-color: variable.$red;
             }
         }
     }

@@ -1,0 +1,105 @@
+.sujet
+{
+    &__item
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        margin: 1rem;
+        transition: all 0.3s ease-in-out;
+        &__img
+        {
+            width: 24em;
+
+        }
+        &__text
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            width: 24em;
+            padding: 1rem;
+            background-color: variable.$darkestBackground;
+
+            &__tag
+            {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                opacity: 0.5;
+
+                margin: 0.5rem 0;
+                padding: 0.5rem;
+            }
+            &__data
+            {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                // width: 50%;
+                margin-bottom: 1rem;
+                opacity: 0.6;
+                &__item
+                {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 0.2em 0;
+
+                    width: 50%;
+                    font-size: 1.2rem;
+                    color: variable.$whiteBackground;
+                }
+            }
+            &__title
+            {
+                font-size: 1.5rem;
+                font-weight: 700;
+                text-align: center;
+                margin: 1em 0;
+
+            }
+            &__description
+            {
+                font-size: 1rem;
+                font-weight: 400;
+                margin: 1em 0;
+            }
+            &__link
+            {
+                border: 1px solid variable.$whiteBackground;
+                border-radius: 1rem;
+                padding: 0.5rem 1rem;
+                margin: 1em 0;
+                text-decoration: none;
+                color: variable.$whiteBackground;
+            }
+        }
+    }
+    @media only screen and (min-width: variable.$desktop)
+    {
+        
+        &__item
+        {
+            // margin: 2rem;
+            &__img
+            {
+                width: 50em;
+            }
+            &__text
+            {
+                width: 50em;
+                position: relative;
+                bottom : 3em;
+                left: 2em;
+            }
+        }
+        
+    }
+}
