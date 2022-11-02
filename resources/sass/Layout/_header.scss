@@ -7,7 +7,7 @@
     
     &__nav
     {
-        background-color: $red;
+        background-color: variable.$red;
         opacity: 0.5;
         height: 3rem;
     }
@@ -30,7 +30,7 @@
             // padding-top: 2rem;
             &--red
             {
-                color: $red;
+                color: variable.$red;
             }
         }
         &__div
@@ -75,7 +75,7 @@
         background-attachment: fixed;
         height: 10em;
     }
-    @media only screen and (min-width: $tablet)
+    @media only screen and (min-width: variable.$tablet)
     {
         height: 29.1rem;
         &__body
@@ -103,7 +103,7 @@
             }
         }
     }
-    @media only screen and (min-width: $desktop)
+    @media only screen and (min-width: variable.$desktop)
     {
         height: 70rem;
         &__body
