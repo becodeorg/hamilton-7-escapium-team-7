@@ -1,46 +1,45 @@
-
 .footer{
-    color: #717171; 
-    background-image: 
-        //linear-gradient(top to bottom, rgba(0,0,0,0.29), rgba(0,0,0,0.79)),
-        url("../resources/images/gallery/room-7-360x222.jpg");
-    background-size: 812px 1500px;
+    color: $globalFontColor; 
+    background-color: $darkBackground;
+    color: $whiteBackground;
+    background-image: url("../resources/images/gallery/room-7-360x222.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:overlay;
 
 
     &__info{
         display: flex;
         flex-direction: column;
-
+        
         &__ouraddress{
-            padding-bottom: 1em;
+            padding-bottom: 3em;
             &__p{
                 padding-left: 2em;
             }
         }
         &__usefullinks{
-            padding-bottom: 1em;
+            padding-bottom: 3em;
             &__list{
                 list-style: none;
                 padding-left: 2em;
             }
         }
         &__workinghours{
-            padding-bottom: 1em;
+            padding-bottom: 3em;
             &__table{
                 border-collapse: separate;
-                border-spacing: 1em;
+                border-spacing: 1em 0em;
                 padding-left: 1em;
             }
         }
         &__sociallinks{
-            padding-bottom: 1em;
+            padding-bottom: 3em;
             &__icons{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
-                
             }
-            
         }
 
         &__number{
@@ -57,43 +56,56 @@
             margin-left: 0.5em;
         }
         &__h3{
-            color: white;
+            color: $whiteBackground;
             padding: 1em;
             padding-left: 1.8em;
         }
-
-
-
         a{
             color: white;
-            background-color: #717171;
+            background-color: $globalFontColor;
+            border-radius: 100%;
             padding: 15px;
-            border-radius: 25px;
         }
-
         &__button{
-            color: white;
+            color: $whiteBackground;
             a:link{
-                color: white;
+                color: $whiteBackground;
             }
         }
     }
 
+    &__greyline{
+        border: 1px solid $darkBackground;
+        border-width: 2px;
+        max-width: cover;
+    }
+
     &__copyright{
         text-align: center;
-        padding-top: 1em;
+        padding-top: 3em;
         padding-bottom: 1em;
     }
 }
 
-.cred{
-    color: red;
-}
-
 
 @media screen and (max-width: $tablet) {
-    &__info{
-        display: flex;
-        flex-direction: row;
+    .footer{
+        &__info{
+            display: flex;
+            flex-direction: row;
+            &__sociallinks{
+                &__icons{
+                    display: grid;
+                    flex-direction: column;
+                    align-items: center;
+
+                    display: grid;
+                    grid-template-areas: 
+                    "a b"
+                    "c d"
+                    "e f";
+                }
+            }
+        }
     }
 }
