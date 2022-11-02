@@ -1,0 +1,17 @@
+.button
+{
+    background-color: variable.$red;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 2em;
+    border-radius: 100px;
+    width: 10em;
+    height: 3em;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover
+    {
+        background-color: black;
+    }
+}

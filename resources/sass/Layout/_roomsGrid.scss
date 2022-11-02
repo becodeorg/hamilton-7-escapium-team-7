@@ -1,0 +1,171 @@
+.rooms
+{
+    &__filter
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 3em;
+
+        &__button
+        {
+            width: 10em;
+            margin: 0.5em 1em;
+            padding: 1em 0.5em;
+            border-radius: 100px;
+            border: 1px solid variable.$globalFontColor;
+            text-align: center;
+            color: variable.$whiteBackground;
+
+            font-size: 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+
+            &:hover
+            {
+                background-color: variable.$globalFontColor;
+            }
+            &--active
+            {
+                background-color: variable.$red;
+                color: variable.$whiteBackground;
+                border: 1px solid variable.$red;
+                &:hover
+                {
+                    background-color: variable.$red;
+                }
+            }
+
+            input
+            {
+                // display: none;
+                visibility: hidden;
+            }
+        }
+    }
+    &__grid
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+        &__item
+        {
+            display: flex;
+            align-items: flex-end;
+            padding: 1rem 1rem;
+            margin: 1em 1em;
+
+            height: 35em;
+            width: 100%;
+
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%),url(../resources/images/gallery/room-2-557x400.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            &__body
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-start;
+                // width: 100%;
+                // height: 100%;
+                // padding: 1rem 1rem;
+                color: variable.$whiteBackground;
+                transition: all 0.3s;
+                &__data
+                {
+                    display: flex;
+                    flex-direction: row;
+                    // justify-content: flex-end;
+                    // align-items: flex-start;
+                    width: 100%;
+                    // height: 100%;
+                    // padding: 1rem 1rem;
+                    color: variable.$whiteBackground;
+                    transition: all 0.3s;
+                    &__item
+                    {
+                        display: flex;
+                        // justify-content: space-between;
+                        align-items: center;
+                        width: auto;
+                        margin: 0.5rem 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: variable.$tablet)
+    {
+        &__filter
+        {
+            &__button
+            {
+                width: 7em;
+                margin: 0.5em 0.5em;
+                padding: 0.5em 0em;
+            }
+        }
+        &__grid
+        {
+            &__item
+            {
+                height: 15em;
+                margin: 1em 0.5em;
+                width: 22%;
+
+                &__body
+                {
+                    &__data
+                    {
+                        flex-direction: column;
+                        &__item
+                        {
+                            // margin: 0.5rem 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: variable.$desktop)
+    {
+        &__grid
+        {
+            margin: 0 20em;
+            &__item
+            {
+                height: 25em;
+                margin: 1em 0.5em;
+                width: 22%;
+
+                &__body
+                {
+                    &__data
+                    {
+                        flex-direction: row;
+                        &__item
+                        {
+                            // margin: 0.5rem 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+        
+}
+
+.whiteColor
+{
+    color: variable.$whiteBackground;
+}
+.redColor
+{
+    color: variable.$red;
+}
