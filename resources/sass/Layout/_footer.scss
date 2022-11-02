@@ -1,16 +1,15 @@
 
 .footer{
-    color: #717171;
-    
-    &__bgimage{
-        //background-image:rgba(72, 72, 73, 0.5);
-        width: 412px;
-    }
+    color: #717171; 
+    background-image: 
+        //linear-gradient(top to bottom, rgba(0,0,0,0.29), rgba(0,0,0,0.79)),
+        url("../resources/images/gallery/room-7-360x222.jpg");
+    background-size: 812px 1500px;
+
 
     &__info{
         display: flex;
         flex-direction: column;
-        background-color: #222222;
 
         &__ouraddress{
             padding-bottom: 1em;
@@ -82,7 +81,6 @@
 
     &__copyright{
         text-align: center;
-        background-color: #1B1B1B;
         padding-top: 1em;
         padding-bottom: 1em;
     }
@@ -92,41 +90,10 @@
     color: red;
 }
 
-/*
-Faire la mise en page de la table
-ajouter l'image en background
-Mediac
 
-*/
-
-
-/*
-footer{
-    linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
-
-
-        background: #9F9F9F;
-        background: -moz-linear-gradient(top, #9F9F9F 0%, #8B8B8B 0%, #4D4D4D 100%);
-        background: -webkit-linear-gradient(top, #9F9F9F 0%, #8B8B8B 0%, #4D4D4D 100%);
-        background: linear-gradient(to bottom, #9F9F9F 0%, #8B8B8B 0%, #4D4D4D 100%);
+@media screen and (max-width: $tablet) {
+    &__info{
+        display: flex;
+        flex-direction: row;
+    }
 }
-*/
-
-
-/*
-    a:link{
-        color: white;
-        background-color: #717171;
-    }
-    a:visited{
-        color: white;
-        background-color: #717171;
-    }
-    a:hover{
-        color: $red;
-        background-color: white;
-    }
-    i{
-        color: white;
-    }
-*/
