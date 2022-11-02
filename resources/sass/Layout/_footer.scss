@@ -1,15 +1,111 @@
-
 .footer{
-    color: #717171;
-    &__h3{
-        color: white;
+    color: variable.$globalFontColor; 
+    background-color: variable.$darkBackground;
+    color: variable.$whiteBackground;
+    background-image: url("../resources/images/gallery/room-7-360x222.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:overlay;
+
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        
+        &__ouraddress{
+            padding-bottom: 3em;
+            &__p{
+                padding-left: 2em;
+            }
+        }
+        &__usefullinks{
+            padding-bottom: 3em;
+            &__list{
+                list-style: none;
+                padding-left: 2em;
+            }
+        }
+        &__workinghours{
+            padding-bottom: 3em;
+            &__table{
+                border-collapse: separate;
+                border-spacing: 1em 0em;
+                padding-left: 1em;
+            }
+        }
+        &__sociallinks{
+            padding-bottom: 3em;
+            &__icons{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+        }
+
+        &__number{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0.5em;
+            padding-top: 2em;
+        }
+        &__redline{
+            border: 2px solid variable.$red;
+            border-width: 2px;
+            width: 30px;
+            margin-left: 0.5em;
+        }
+        &__h3{
+            color: variable.$whiteBackground;
+            padding: 1em;
+            padding-left: 1.8em;
+        }
+        a{
+            color: variable.$whiteBackground;
+            background-color: variable.$globalFontColor;
+            border-radius: 100%;
+            padding: 15px;
+        }
+        &__button{
+            color: variable.$whiteBackground;
+            a:link{
+                color: variable.$whiteBackground;
+            }
+        }
     }
-    &__part{
-        &1{background-color: #222222;}
-        &2{background-color: #1B1B1B;}
+
+    &__greyline{
+        border: 1px solid variable.$darkBackground;
+        border-width: 2px;
+        max-width: cover;
     }
-    &__img{
-        width: 2em;
-        height: 2em;
+
+    &__copyright{
+        text-align: center;
+        padding-top: 3em;
+        padding-bottom: 1em;
+    }
+}
+
+
+@media screen and (max-width: variable.$tablet) {
+    .footer{
+        &__info{
+            display: flex;
+            flex-direction: row;
+            &__sociallinks{
+                &__icons{
+                    display: grid;
+                    flex-direction: column;
+                    align-items: center;
+
+                    display: grid;
+                    grid-template-areas: 
+                    "a b"
+                    "c d"
+                    "e f";
+                }
+            }
+        }
     }
 }
