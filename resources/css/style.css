@@ -1356,7 +1356,7 @@ body {
   border: 1px solid #fefefe;
   border-radius: 1rem;
   padding: 0.5rem 1rem;
-  margin-top: 1em;
+  margin: 1em 0;
   text-decoration: none;
   color: #fefefe;
 }
@@ -1366,18 +1366,22 @@ body {
   }
   .sujet__item__text {
     width: 50em;
+    position: relative;
+    bottom: 3em;
+    left: 2em;
   }
 }
 
 .pageBlogs {
   display: flex;
   flex-direction: column;
-  background-color: red;
+  background-color: green;
 }
 @media only screen and (min-width: 768px) {
   .pageBlogs {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    background-color: red;
   }
 }
 

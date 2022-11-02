@@ -76,7 +76,7 @@
                 border: 1px solid variable.$whiteBackground;
                 border-radius: 1rem;
                 padding: 0.5rem 1rem;
-                margin-top: 1em;
+                margin: 1em 0;
                 text-decoration: none;
                 color: variable.$whiteBackground;
             }
@@ -95,9 +95,9 @@
             &__text
             {
                 width: 50em;
-                // position: relative;
-                // bottom : 1em;
-                // left: 1em;
+                position: relative;
+                bottom : 3em;
+                left: 2em;
             }
         }
         
