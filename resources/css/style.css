@@ -429,6 +429,10 @@ body {
   border-bottom: dotted 1px #777;
   height: fit-content;
 }
+.navigation__ul__li a {
+  text-decoration: none;
+  color: #777;
+}
 .navigation__button {
   display: none;
 }

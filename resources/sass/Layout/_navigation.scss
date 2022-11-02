@@ -37,6 +37,11 @@
             padding-left: 2em;
             border-bottom: dotted 1px $navFontColor;
             height: fit-content;
+           
+            a {
+                text-decoration: none;
+                color: $navFontColor;
+            }
             
         }
 
