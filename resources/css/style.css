@@ -537,28 +537,26 @@ body {
 }
 
 .about__h1 {
-  font-size: 0.6em;
+  font-size: 1em;
   color: white;
   font-family: "Montserrat", sans-serif;
 }
 
 .about__h1--play {
-  font-size: 0.6em;
+  font-size: 1em;
   color: white;
   font-family: "Montserrat", sans-serif;
 }
 
 .about__h1--black {
-  font-size: 0.6em;
+  font-size: 1em;
   font-family: "Montserrat", sans-serif;
 }
 
 .about__p {
-  font-size: 0.5em;
+  font-size: 0.8em;
   color: #717171;
   text-align: center;
-  margin-left: 10em;
-  margin-right: 10em;
   font-family: "Hind", sans-serif;
 }
 
@@ -579,6 +577,7 @@ body {
   color: white;
   overflow: hidden;
   padding-top: 0.5em;
+  padding-bottom: 1em;
 }
 .about__play .about__play--p {
   display: flex;
@@ -639,6 +638,9 @@ body {
   align-items: center;
   background-color: #1B1B1B;
   padding-bottom: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
 }
 .about__testimonials .testimonials__read {
   font-size: 0.1em;
@@ -705,7 +707,7 @@ body {
     justify-content: center;
   }
   .about__play__container .about__play--p {
-    width: 20%;
+    width: 30%;
   }
   .about__certificates__container {
     display: flex;
@@ -738,13 +740,16 @@ body {
     font-size: 2em;
   }
   .about__p {
-    font-size: 1em;
+    font-size: 2em;
   }
   .about__FAQ-question {
-    font-size: 1em;
+    font-size: 1.5em !important;
   }
   .about__h1--play {
-    font-size: 1em;
+    font-size: 2em;
+  }
+  .about__play__container {
+    width: 100%;
   }
 }
 .contact__h1 {
@@ -752,6 +757,12 @@ body {
   color: white;
   margin-bottom: -0.1em;
   font-family: "Montserrat", sans-serif;
+}
+.contact__h1--black {
+  font-size: 1.5em;
+  margin-bottom: -0.1em;
+  font-family: "Montserrat", sans-serif;
+  color: black;
 }
 
 .contact__p {
@@ -983,6 +994,12 @@ body {
   color: white;
   margin-bottom: -0.1em;
   font-family: "Montserrat", sans-serif;
+}
+.contact__h1--black {
+  font-size: 1.5em;
+  margin-bottom: -0.1em;
+  font-family: "Montserrat", sans-serif;
+  color: black;
 }
 
 .contact__p {
@@ -1238,6 +1255,126 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+  }
+}
+
+.index__who {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  gap: 2em;
+  padding-left: 3.9em;
+  vertical-align: middle;
+}
+.index__who .fa {
+  color: red;
+  padding-right: 1.5em;
+  width: 1em;
+}
+
+.index__infos {
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  color: white;
+  padding-bottom: 2rem;
+  gap: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.index__infos .index__infos__form {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding-left: 1em;
+}
+.index__infos .index__infos__form__textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.index__infos .index__infos__form__textarea .index__input {
+  background-color: #222222;
+  color: #717171;
+  border-bottom: solid #717171;
+}
+.index__infos .index__infos__form__textarea .index__input--big {
+  background-color: #222222;
+  border-bottom: solid #717171;
+}
+
+.index__infos__btn {
+  background-color: #222222;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 2em;
+  font-family: "Hind", sans-serif;
+  border: dotted 1px #717171;
+  width: 8em;
+}
+.index__infos__btn .index__infos__btn--link {
+  text-decoration: none;
+  color: white;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.index__ready {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-bottom: 2rem;
+  gap: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.index__ready__btn {
+  background-color: red;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 2em;
+  font-family: "Hind", sans-serif;
+  width: 8em;
+}
+.index__ready__btn--link {
+  text-decoration: none;
+  color: white;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .index__container__mapTouch {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .index__container__mapTouch .index__infos {
+    width: 50%;
+  }
+  .index__container__mapTouch .index__map {
+    width: 50%;
+  }
+  .index__who {
+    height: 25rem;
+    gap: 4rem;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .index__who {
+    padding-left: 20rem;
+    height: 30rem;
+    padding-top: 5rem;
   }
 }
 

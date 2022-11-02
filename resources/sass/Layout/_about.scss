@@ -3,28 +3,26 @@
 
 
 .about__h1{
-    font-size: 0.6em;
+    font-size: 1em;
     color: white;
     font-family: "Montserrat", sans-serif; 
 }
 
 .about__h1--play {
-    font-size: 0.6em;
+    font-size: 1em;
     color: white;
     font-family: "Montserrat", sans-serif;
 }
 .about__h1--black {
-    font-size: 0.6em;
+    font-size:1em;
     font-family: "Montserrat", sans-serif;
     
 }
 
 .about__p {
-    font-size: 0.5em;
+    font-size: 0.8em;
     color: $globalFontColor;
     text-align: center;
-    margin-left: 10em;
-    margin-right: 10em;
     font-family: "Hind", sans-serif;
 }
 
@@ -45,6 +43,7 @@
     color: white;
     overflow: hidden;
     padding-top: 0.5em;
+    padding-bottom: 1em;
 
     
 
@@ -120,6 +119,9 @@
     align-items: center;
     background-color: $darkestBackground;
     padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
 
     .testimonials__read {
         font-size: 0.1em;
@@ -200,8 +202,9 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        
         .about__play--p {
-            width:20%;
+            width:30%;
         }
 }
     .about__certificates__container {
@@ -247,17 +250,21 @@
     }
     
     .about__p {
-        font-size: 1em;
+        font-size: 2em;
         
     }
 
     .about__FAQ-question {
-        font-size: 1em;
+        font-size: 1.5em!important;
     
 
     }
     .about__h1--play {
-        font-size: 1em;
+        font-size: 2em;
+    }
+
+    .about__play__container {
+        width:100%;
     }
 }
 
