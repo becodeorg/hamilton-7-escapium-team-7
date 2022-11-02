@@ -5,11 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../resources/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
     <header class="header">
-        <nav class="header__nav"></nav>
+        <nav class="navigation">
+            <img src="../resources/resources/images/logo/logo.png" alt="" class="navigation__logo">
+            <ul class="navigation__ul">
+                <li class="navigation__ul__li clicked"><span class="linethrough"></span><a href="../index.html">home</a></li>
+                <li class="navigation__ul__li"><a href="./about.html">about</a></li>
+                <li class="navigation__ul__li"><a href="#">features</a></li>
+                <li class="navigation__ul__li"><a href="./rooms.html">rooms</a></li>
+                <li class="navigation__ul__li"><a href="#">booking</a></li>
+                <li class="navigation__ul__li"><a href="./blogs.html">blog</a></li>
+                <li class="navigation__ul__li"><a href="./contact.html">contacts</a></li>
+            </ul>
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <div class="navigation__burger">
+                  <span class="bar bar--top"></span>
+                  <span class="bar bar--middle"></span>
+                  <span class="bar bar--bot"></span>
+              </div>
+            <a href="#" class="navigation__button">Book Now!</a>
+         </nav>
+
         <div class="header__body">
             <h1 class="header__body__title">blog<span class="header__body__title--red">.</span></h1>
             <div class="header__body__div">
@@ -38,5 +58,8 @@
         </article>
 
     </section>
+
+<script src="../resources/script/script.js"></script>
+
 </body>
 </html>

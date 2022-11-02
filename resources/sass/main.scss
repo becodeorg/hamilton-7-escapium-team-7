@@ -20,10 +20,15 @@
 
 //layout
 
-@import "./Layout/body.scss";
+
+@import "./Layout/navigation";
+@import "./Layout/about";
+@import "../sass/Layout/contact";
+@import "./Layout/roomsGrid";
+@import "./Layout/body";
+@import "./Layout/contact";
+@import "./Layout/pagination";
 @import "./Layout/header.scss";
-@import "./Layout/roomsGrid.scss";
-@import "./Layout/pagination.scss";
 @import "./Layout/roomdescr.scss";
 @import "./Layout/sujet.scss";
 //pages

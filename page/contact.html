@@ -5,11 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../resources/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
     <header class="header">
-        <nav class="header__nav"></nav>
+        <nav class="navigation">
+            <img src="../resources/resources/images/logo/logo.png" alt="" class="navigation__logo">
+            <ul class="navigation__ul">
+                <li class="navigation__ul__li clicked"><span class="linethrough"></span><a href="../index.html">home</a></li>
+                <li class="navigation__ul__li"><a href="./about.html">about</a></li>
+                <li class="navigation__ul__li"><a href="#">features</a></li>
+                <li class="navigation__ul__li"><a href="./rooms.html">rooms</a></li>
+                <li class="navigation__ul__li"><a href="#">booking</a></li>
+                <li class="navigation__ul__li"><a href="./blogs.html">blog</a></li>
+                <li class="navigation__ul__li"><a href="./contact.html">contacts</a></li>
+            </ul>
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <div class="navigation__burger">
+                  <span class="bar bar--top"></span>
+                  <span class="bar bar--middle"></span>
+                  <span class="bar bar--bot"></span>
+              </div>
+            <a href="#" class="navigation__button">Book Now!</a>
+         </nav>
         <div class="header__body">
             <h1 class="header__body__title">contacts<span class="header__body__title--red">.</span></h1>
             <div class="header__body__div">
@@ -20,5 +39,34 @@
         </div>
         
     </header>
+    <section class="contact__infos">
+        <div class="contact__infos__touch">
+            <h1 class="contact__h1">Get in Touch</h1>
+            <p class="contact__p subtitle">If you are interested in working with us, please get in touch</p>
+            <div class="contact__infos__touch__grid">
+                <i class="fa fa-map fa-2x" aria-hidden="true"></i>
+                <p class="contact__p">2390 RoadHill ST., Suite 100 <br> North Downtown, NY, 82153</p>
+                <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                <p class="contact__p"><br>+1800 900 1248</p>
+                <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+                <p class="contact__p"><br>info@escapium.com</p>
+            </div>
+        </div>
+        <div class="contact__infos__form">
+            <h1 class="contact__h1">Contact Form</h1>
+            <div class="contact__infos__form__textarea">
+                <textarea class="contact__input"name="Name" id="" cols="30" rows="2" placeholder="Name"></textarea>
+                <textarea class="contact__input"name="Email" id="" cols="30" rows="2" placeholder="Email Adress"></textarea>
+                <textarea class="contact__input--big"name="message" id="" cols="30" rows="10" placeholder="Your Message..."></textarea>
+            </div>
+            <button class="contact__infos__btn"><a href="#"class="contact__infos__btn--link">Send Message</a></button>
+            
+        </div>
+    </section>
+    <section class="contact__map">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1GeQIdYLtcoAFwunahKro7AScHDYJe78&ehbc=2E312F" width="100%" height="480"></iframe>
+    </section>
+
+    <script src="../resources/script/script.js"></script>
 </body>
 </html>
