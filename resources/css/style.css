@@ -449,7 +449,7 @@ body {
   background-color: white;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navigation {
     height: 4.5em;
   }
@@ -584,6 +584,7 @@ body {
   overflow: hidden;
   gap: 1rem;
   padding-top: 0.5em;
+  padding-bottom: 1.5em;
 }
 .about__certificates .about__certificates-img {
   width: 40%;
