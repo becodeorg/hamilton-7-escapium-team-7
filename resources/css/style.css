@@ -1360,5 +1360,25 @@ body {
   text-decoration: none;
   color: #fefefe;
 }
+@media only screen and (min-width: 1920px) {
+  .sujet__item__img {
+    width: 50em;
+  }
+  .sujet__item__text {
+    width: 50em;
+  }
+}
+
+.pageBlogs {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+}
+@media only screen and (min-width: 768px) {
+  .pageBlogs {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

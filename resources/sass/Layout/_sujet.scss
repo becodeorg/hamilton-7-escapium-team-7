@@ -82,4 +82,24 @@
             }
         }
     }
+    @media only screen and (min-width: variable.$desktop)
+    {
+        
+        &__item
+        {
+            // margin: 2rem;
+            &__img
+            {
+                width: 50em;
+            }
+            &__text
+            {
+                width: 50em;
+                // position: relative;
+                // bottom : 1em;
+                // left: 1em;
+            }
+        }
+        
+    }
 }
