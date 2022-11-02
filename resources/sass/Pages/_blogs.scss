@@ -1,0 +1,11 @@
+.pageBlogs
+{
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: variable.$tablet)
+    {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
