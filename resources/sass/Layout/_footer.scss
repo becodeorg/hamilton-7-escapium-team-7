@@ -1,42 +1,69 @@
 
 .footer{
     color: #717171;
+    
+    &__bgimage{
+        //background-image:rgba(72, 72, 73, 0.5);
+        width: 412px;
+    }
 
-/*
-    a:link{
-        color: white;
-        background-color: #717171;
-    }
-    a:visited{
-        color: white;
-        background-color: #717171;
-    }
-    a:hover{
-        color: $red;
-        background-color: white;
-    }
-    i{
-        color: white;
-    }
-*/
     &__info{
         display: flex;
         flex-direction: column;
-
         background-color: #222222;
+
+        &__ouraddress{
+            padding-bottom: 1em;
+            &__p{
+                padding-left: 2em;
+            }
+        }
+        &__usefullinks{
+            padding-bottom: 1em;
+            &__list{
+                list-style: none;
+                padding-left: 2em;
+            }
+        }
+        &__workinghours{
+            padding-bottom: 1em;
+            &__table{
+                border-collapse: separate;
+                border-spacing: 1em;
+                padding-left: 1em;
+            }
+        }
+        &__sociallinks{
+            padding-bottom: 1em;
+            &__icons{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                
+            }
+            
+        }
+
         &__number{
             display: flex;
             flex-direction: row;
             align-items: center;
+            padding: 0.5em;
+            padding-top: 2em;
         }
         &__redline{
             border: 2px solid $red;
             border-width: 2px;
             width: 30px;
+            margin-left: 0.5em;
         }
         &__h3{
             color: white;
+            padding: 1em;
+            padding-left: 1.8em;
         }
+
+
 
         a{
             color: white;
@@ -56,6 +83,8 @@
     &__copyright{
         text-align: center;
         background-color: #1B1B1B;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
 }
 
@@ -65,6 +94,39 @@
 
 /*
 Faire la mise en page de la table
-Faire les li
 ajouter l'image en background
+Mediac
+
+*/
+
+
+/*
+footer{
+    linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+
+
+        background: #9F9F9F;
+        background: -moz-linear-gradient(top, #9F9F9F 0%, #8B8B8B 0%, #4D4D4D 100%);
+        background: -webkit-linear-gradient(top, #9F9F9F 0%, #8B8B8B 0%, #4D4D4D 100%);
+        background: linear-gradient(to bottom, #9F9F9F 0%, #8B8B8B 0%, #4D4D4D 100%);
+}
+*/
+
+
+/*
+    a:link{
+        color: white;
+        background-color: #717171;
+    }
+    a:visited{
+        color: white;
+        background-color: #717171;
+    }
+    a:hover{
+        color: $red;
+        background-color: white;
+    }
+    i{
+        color: white;
+    }
 */

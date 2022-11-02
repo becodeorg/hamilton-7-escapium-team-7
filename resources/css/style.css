@@ -395,41 +395,61 @@ body {
 
 .footer {
   color: #717171;
-  /*
-      a:link{
-          color: white;
-          background-color: #717171;
-      }
-      a:visited{
-          color: white;
-          background-color: #717171;
-      }
-      a:hover{
-          color: $red;
-          background-color: white;
-      }
-      i{
-          color: white;
-      }
-  */
+}
+.footer__bgimage {
+  width: 412px;
 }
 .footer__info {
   display: flex;
   flex-direction: column;
   background-color: #222222;
 }
+.footer__info__ouraddress {
+  padding-bottom: 1em;
+}
+.footer__info__ouraddress__p {
+  padding-left: 2em;
+}
+.footer__info__usefullinks {
+  padding-bottom: 1em;
+}
+.footer__info__usefullinks__list {
+  list-style: none;
+  padding-left: 2em;
+}
+.footer__info__workinghours {
+  padding-bottom: 1em;
+}
+.footer__info__workinghours__table {
+  border-collapse: separate;
+  border-spacing: 1em;
+  padding-left: 1em;
+}
+.footer__info__sociallinks {
+  padding-bottom: 1em;
+}
+.footer__info__sociallinks__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 .footer__info__number {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 0.5em;
+  padding-top: 2em;
 }
 .footer__info__redline {
   border: 2px solid #F60B0E;
   border-width: 2px;
   width: 30px;
+  margin-left: 0.5em;
 }
 .footer__info__h3 {
   color: white;
+  padding: 1em;
+  padding-left: 1.8em;
 }
 .footer__info a {
   color: white;
@@ -446,6 +466,8 @@ body {
 .footer__copyright {
   text-align: center;
   background-color: #1B1B1B;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .cred {
@@ -454,8 +476,37 @@ body {
 
 /*
 Faire la mise en page de la table
-Faire les li
 ajouter l'image en background
+Mediac
+
+*/
+/*
+footer{
+    linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+
+
+        background: #9F9F9F;
+        background: -moz-linear-gradient(top, #9F9F9F 0%, #8B8B8B 0%, #4D4D4D 100%);
+        background: -webkit-linear-gradient(top, #9F9F9F 0%, #8B8B8B 0%, #4D4D4D 100%);
+        background: linear-gradient(to bottom, #9F9F9F 0%, #8B8B8B 0%, #4D4D4D 100%);
+}
+*/
+/*
+    a:link{
+        color: white;
+        background-color: #717171;
+    }
+    a:visited{
+        color: white;
+        background-color: #717171;
+    }
+    a:hover{
+        color: $red;
+        background-color: white;
+    }
+    i{
+        color: white;
+    }
 */
 .header__nav {
   background-color: #F60B0E;
