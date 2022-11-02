@@ -1,0 +1,162 @@
+@import "../Utils/variables";
+
+
+
+.index__who {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    gap:2em;
+    padding-left: 3.9em;
+    vertical-align: middle;
+    
+
+    .fa {
+        color: red;
+        padding-right: 1.5em;
+        width: 1em;
+       
+    }
+}
+
+
+
+.index__infos{
+    background-color: $darkBackground;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    color: white;
+    padding-bottom: 2rem;
+    gap:2em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    .index__infos__form {
+        color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        padding-left: 1em;
+
+        &__textarea {
+            display:flex;
+            flex-direction: column;
+            gap: 1em;
+
+        .index__input {
+            background-color: $darkBackground;
+            color: $globalFontColor;
+            border-bottom: solid $globalFontColor;
+
+            &--big{
+                background-color: $darkBackground;
+                border-bottom: solid $globalFontColor;
+            }
+        }
+
+        }
+    
+    }
+}
+
+.index__infos__btn {
+    background-color: $darkBackground;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 2em;
+    font-family: "Hind", sans-serif;
+    border: dotted 1px $globalFontColor;
+    width: 8em;
+
+    .index__infos__btn--link {
+        text-decoration: none;
+        color: white;
+        font-size: 0.7em;
+        font-weight: bold;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.index__ready {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-bottom: 2rem;
+    gap:2em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    &__btn {
+            background-color: red;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            border-radius: 2em;
+            font-family: "Hind", sans-serif;
+            width: 8em;
+                
+                &--link {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 0.7em;
+                    font-weight: bold;
+                }
+            }
+}
+
+
+
+@media only screen and (min-width: $tablet) {
+
+
+    .index__container__mapTouch {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+       justify-content: center;
+
+       .index__infos {
+        width: 50%;
+       }
+
+       .index__map {
+        width: 50%;
+       }
+        
+    }
+
+    .index__who {
+        height: 25rem;
+        gap: 4rem;
+    }
+
+
+}
+
+@media only screen and (min-width: $desktop) {
+    .index__who {
+        padding-left: 20rem;
+        height: 30rem;
+        padding-top: 5rem;
+    }
+}
