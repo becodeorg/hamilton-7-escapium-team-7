@@ -1604,16 +1604,32 @@ body {
   }
 }
 
+.photo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+.photo__img {
+  width: 7em;
+  margin: 5px;
+  object-fit: cover;
+  object-position: center;
+}
+@media only screen and (min-width: 1920px) {
+  .photo__img {
+    width: 17em;
+  }
+}
+
 .pageBlogs {
   display: flex;
   flex-direction: column;
-  background-color: green;
 }
 @media only screen and (min-width: 768px) {
   .pageBlogs {
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: red;
   }
 }
 
