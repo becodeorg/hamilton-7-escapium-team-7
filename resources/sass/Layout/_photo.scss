@@ -1,0 +1,23 @@
+.photo
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1 1 auto;
+    &__img
+    {
+        width: 7em;
+        margin: 5px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    @media only screen and (min-width: variable.$desktop)
+    {
+        &__img
+        {
+            width: 17em;
+        }
+    }
+        
+}
