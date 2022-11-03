@@ -1,9 +1,11 @@
 //util
 
+
 @use "./Utils/variables" as variable;
 @use "./Utils/functions.scss" as function;
 @use "./Utils/mixins.scss" as mixin;
 @use "./Utils/placeholders.scss" as placeholder;
+
 
 //vendors
 
@@ -19,6 +21,7 @@
 // @import "./Compsants/notation.scss";
 
 //layout
+@import "./Layout/footer.scss";
 
 
 @import "./Layout/navigation";
@@ -32,6 +35,7 @@
 @import "./Layout/index";
 @import "./Layout/roomdescr.scss";
 @import "./Layout/sujet.scss";
+@import "./Layout/photo.scss";
 //pages
 
 @import "./Pages/blogs.scss";
