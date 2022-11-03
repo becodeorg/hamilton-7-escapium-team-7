@@ -1387,6 +1387,22 @@ body {
   width: 80%;
 }
 
+.index__instagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.index__instagram .photo {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  flex-direction: row;
+}
+.index__instagram .photo__img {
+  width: 45%;
+}
+
 .index__who {
   display: flex;
   flex-direction: column;
@@ -1527,6 +1543,10 @@ body {
   .index__who {
     height: 25rem;
     gap: 4rem;
+    background-image: url(/resources/resources/images/gallery/room-7-360x222.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 @media only screen and (min-width: 1920px) {
@@ -1572,6 +1592,12 @@ body {
     padding-left: 20rem;
     height: 30rem;
     padding-top: 5rem;
+  }
+  .index__instagram .photo {
+    width: 50%;
+  }
+  .index__instagram .photo__img {
+    width: 25% !important;
   }
 }
 .description {
