@@ -473,12 +473,9 @@ body {
   color: #fefefe;
   background-color: #717171;
   border-radius: 100%;
-  padding: 15px;
+  padding: 0.7em;
 }
 .footer__info__button {
-  color: #fefefe;
-}
-.footer__info__button a:link {
   color: #fefefe;
 }
 .footer__greyline {
@@ -489,10 +486,10 @@ body {
 .footer__copyright {
   text-align: center;
   padding-top: 3em;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .footer__info {
     display: flex;
     flex-direction: row;
@@ -503,7 +500,7 @@ body {
     grid-template-areas: "a b" "c d" "e f";
   }
 }
-@media screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px) {
   .footer__info {
     display: flex;
     flex-direction: row;
