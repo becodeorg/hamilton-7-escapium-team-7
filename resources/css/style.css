@@ -1831,6 +1831,9 @@ body {
   .container-2 {
     width: 100%;
   }
+  .container-2 .index__instagram {
+    width: 100%;
+  }
   .container-2 .index__instagram .photo {
     width: 100%;
   }
