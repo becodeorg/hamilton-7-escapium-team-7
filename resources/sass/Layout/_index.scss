@@ -64,6 +64,14 @@ body {
     gap:2em;
     padding-left: 3.9em;
     vertical-align: middle;
+    height: 25rem;
+    gap: 4rem;
+    background-image: url(/resources/resources/images/gallery/room-7-360x222.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    
     
 
     .fa {
@@ -239,15 +247,7 @@ body {
         
     }
 
-    .index__who {
-        height: 25rem;
-        gap: 4rem;
-        background-image: url(/resources/resources/images/gallery/room-7-360x222.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
-    }
+    
 
 
 }
@@ -312,6 +312,7 @@ body {
         padding-left: 20rem;
         height: 30rem;
         padding-top: 5rem;
+        
     }
 
 

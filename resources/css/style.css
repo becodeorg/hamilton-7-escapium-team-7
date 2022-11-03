@@ -1413,6 +1413,12 @@ body {
   gap: 2em;
   padding-left: 3.9em;
   vertical-align: middle;
+  height: 25rem;
+  gap: 4rem;
+  background-image: url(/resources/resources/images/gallery/room-7-360x222.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .index__who .fa {
   color: red;
@@ -1539,14 +1545,6 @@ body {
   }
   .index__container__mapTouch .index__map {
     width: 50%;
-  }
-  .index__who {
-    height: 25rem;
-    gap: 4rem;
-    background-image: url(/resources/resources/images/gallery/room-7-360x222.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
 }
 @media only screen and (min-width: 1920px) {
