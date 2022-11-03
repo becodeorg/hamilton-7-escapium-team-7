@@ -1,6 +1,39 @@
 @import "../Utils/variables";
 
+body {
+    width: 100%;
+}
 
+.index__featured {
+  background-color: $darkestBackground;
+  display:flex;
+  flex-direction: column;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  gap:2em;
+  
+    &__article {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__img {
+            width: 100%;
+        }
+
+        &__text {
+            width: 100%;
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: $darkBackground;
+            height: fit-content;
+            width: 80%;
+        
+        }
+    }
+}
 
 .index__who {
     display: flex;
@@ -129,6 +162,33 @@
 @media only screen and (min-width: $tablet) {
 
 
+    .index__featured {
+        gap: 5em;
+        &__article {
+            padding-bottom: 5em;
+            &__img {
+                width: 80%;
+            }
+        }
+    }
+
+    .index__blog {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        
+        
+
+        .sujet__item {
+            width: 10%;
+            
+           
+        }
+    }
+
     .index__container__mapTouch {
         display: flex;
         flex-direction: row;
@@ -154,6 +214,28 @@
 }
 
 @media only screen and (min-width: $desktop) {
+
+    .index__featured {
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        padding-left: 30%;
+        &__article {
+            flex-direction: row;
+            gap:2em;
+            width: 100%;
+            
+            &__text {
+                padding: 1em;
+                width:45%;
+            }
+    
+            &__img {
+                width: 70%;
+            }
+        }
+    }
+
     .index__who {
         padding-left: 20rem;
         height: 30rem;
