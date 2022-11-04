@@ -797,8 +797,7 @@ body {
   align-items: center;
 }
 .about__FAQ__answer {
-  font-size: 0.7em;
-  font-weight: bolder;
+  font-size: 0.8em;
   width: 100%;
   font-family: "Hind";
   display: none;
@@ -815,7 +814,7 @@ body {
   padding-left: 2rem;
 }
 .about__FAQ .about__FAQ__container .about__FAQ-question {
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: bolder;
   font-family: "Hind";
 }
@@ -868,6 +867,15 @@ body {
     align-items: center;
     justify-content: center;
     width: 50%;
+  }
+  .about__FAQ-question {
+    font-size: 1.5em !important;
+    margin-left: 5.5rem;
+  }
+  .about__FAQ__answer {
+    font-size: 1em !important;
+    padding-left: 5.5rem;
+    width: 80%;
   }
 }
 @media (min-width: 1920px) {

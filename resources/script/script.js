@@ -33,20 +33,52 @@ const answer = document.querySelectorAll(".about__FAQ__answer");
 
 question[0].addEventListener("click", () => {
     answer[0].classList.toggle ("shown");
+    for (let i = 0; i < question.length; i++) {
+        if (answer[i].classList.contains("shown") && i != 0) {
+            answer[i].classList.toggle("shown");
+        }
+    }
+   
+
 })
 
 question[1].addEventListener("click", () => {
     answer[1].classList.toggle ("shown");
+    for (let i = 0; i < question.length; i++) {
+        if (answer[i].classList.contains("shown") && i != 1) {
+            answer[i].classList.toggle("shown");
+        }
+    }
 })
 question[2].addEventListener("click", () => {
     answer[2].classList.toggle ("shown");
+    for (let i = 0; i < question.length; i++) {
+        if (answer[i].classList.contains("shown") && i != 2) {
+            answer[i].classList.toggle("shown");
+        }
+    }
 })
 question[3].addEventListener("click", () => {
     answer[3].classList.toggle ("shown");
+    for (let i = 0; i < question.length; i++) {
+        if (answer[i].classList.contains("shown") && i != 3) {
+            answer[i].classList.toggle("shown");
+        }
+    }
 })
 question[4].addEventListener("click", () => {
     answer[4].classList.toggle ("shown");
+    for (let i = 0; i < question.length; i++) {
+        if (answer[i].classList.contains("shown") && i != 4) {
+            answer[i].classList.toggle("shown");
+        }
+    }
 })
 question[5].addEventListener("click", () => {
     answer[5].classList.toggle ("shown");
+    for (let i = 0; i < question.length; i++) {
+        if (answer[i].classList.contains("shown") && i != 5) {
+            answer[i].classList.toggle("shown");
+        }
+    }
 })
