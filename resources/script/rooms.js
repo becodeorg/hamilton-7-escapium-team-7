@@ -98,8 +98,6 @@ function loadJS()
             }
         })
                         
-        
-        
         return tmp;
 
 }
