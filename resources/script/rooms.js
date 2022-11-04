@@ -8,6 +8,7 @@ function generateRoom(rooms) {
     //create a whith class rooms__grid__item
     let conteneur = document.createElement('a');
     conteneur.className = 'rooms__grid__item';
+    conteneur.href = './singleRoom.html?room='+rooms.name;
     
     let body = document.createElement('a');
     body.className = 'rooms__grid__item__body';
