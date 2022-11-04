@@ -4,13 +4,13 @@
 
 .about__h1{
     font-size: 1em;
-    color: white;
+    color: $whiteBackground;
     font-family: "Montserrat", sans-serif; 
 }
 
-.about__h1--play {
+.about__h1__play {
     font-size: 1em;
-    color: white;
+    color: $whiteBackground;
     font-family: "Montserrat", sans-serif;
 }
 .about__h1--black {
@@ -40,14 +40,12 @@
     flex-direction: column;
     align-items: center;
     background-color: $darkestBackground;
-    color: white;
+    color: $whiteBackground;
     overflow: hidden;
     padding-top: 0.5em;
     padding-bottom: 1em;
 
-    
-
-    .about__play--p {
+    .about__play__p {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -55,14 +53,19 @@
         padding-top: 1.5rem;
         gap:0.5em;
 
-        .fa-superpowers {
-            color: white;
-             height: 1em;
-             width: 1em;
-         }
-
+        .about__play__p__icons{
+            text-align: center;
+            padding: 0.5em;
+            border: 2px solid $globalFontColor;
+            border-radius: 50%;
+            margin: 1em;
+            .fa-solid {
+                color: $whiteBackground;
+                height: 1.5em;
+                width: 1.5em;
+            }
+        }
     }
-
 }
 
 
@@ -72,20 +75,23 @@
     align-items: center;
     justify-content: center;
     background-color: $darkestBackground;
-    color: white;
+    color: $whiteBackground;
     overflow: hidden;
     gap: 1rem;
     padding-top: 0.5em;
-    padding-bottom: 1.5em;
+    padding-bottom: 2em;
 
-    
+    .about__certificates__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .about__certificates-img{
         width:40%;
+        margin-bottom: 1em;
     }
 }
-
-
 
 
 .about__team {
@@ -93,7 +99,7 @@
     flex-direction: column;
     align-items: center;
     background-color: $darkestBackground;
-    color: white;
+    color: $whiteBackground;
     overflow: hidden;
     padding-bottom: 2rem;
     padding-top: 0.5em;
@@ -103,7 +109,7 @@
         flex-direction: column;
         align-items: center;
         background-color: $darkestBackground;
-        color: white;
+        color: $whiteBackground;
         overflow: hidden;
         margin-top: 2rem;
 
@@ -125,7 +131,7 @@
 
     .testimonials__read {
         font-size: 0.1em;
-        color: red;
+        color: $red;
         text-decoration: underline;
     }
 
@@ -166,35 +172,33 @@
         margin-top: 2rem;
         gap: 1rem;
 
-        .about__FAQ-question {
+        .about__FAQ-question{
             font-size: 0.6em;
             font-weight: bolder;
-
         }
     }
 }
 
 
 @media (min-width: 412px) {
-    .about__certificates__container {
+    .about__certificates__container{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         width: 95%;
         gap:1rem;
-
-}
-
+    }
 }
 
 @media (min-width: 768px) {
-
-
     .about__p {
         margin-left: 1em;
         margin-right: 1em;
         
+    }
+    .about__play__p{
+        width:30%;
     }
 
     .about__play__container{
@@ -202,30 +206,31 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        
-        .about__play--p {
-            width:30%;
-        }
-}
-    .about__certificates__container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap:1rem;
-        width:35%;
-
-        
     }
-    .about__team__container {
+
+    
+
+
+    .about__certificates__container{
+        display: flex!important;
+        flex-direction: row!important;
+        justify-content: space-evenly!important;
+        gap:2rem;
+        width:40%;
+    }
+    
+    .about__certificates-img{
+        width:40%;
+        margin-bottom: 1em;
+    }
+
+
+    .about__team__container{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         width:60%;
-
-
-        
     }
 
     .about__testimonials__container {
@@ -235,30 +240,25 @@
         justify-content: center;
         width: 50%;
     }
-
 }
 
 @media (min-width: 1920px) {
     .about__h1{
         font-size: 2em;
-        
-        
     }
+
     .about__h1--black {
         font-size: 2em;
-        
     }
     
     .about__p {
         font-size: 2em;
-        
     }
 
     .about__FAQ-question {
         font-size: 1.5em!important;
-    
-
     }
+
     .about__h1--play {
         font-size: 2em;
     }

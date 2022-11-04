@@ -645,13 +645,13 @@ body {
 
 .about__h1 {
   font-size: 1em;
-  color: white;
+  color: #fefefe;
   font-family: "Montserrat", sans-serif;
 }
 
-.about__h1--play {
+.about__h1__play {
   font-size: 1em;
-  color: white;
+  color: #fefefe;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -681,12 +681,12 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #1B1B1B;
-  color: white;
+  color: #fefefe;
   overflow: hidden;
   padding-top: 0.5em;
   padding-bottom: 1em;
 }
-.about__play .about__play--p {
+.about__play .about__play__p {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -694,10 +694,17 @@ body {
   padding-top: 1.5rem;
   gap: 0.5em;
 }
-.about__play .about__play--p .fa-superpowers {
-  color: white;
-  height: 1em;
-  width: 1em;
+.about__play .about__play__p .about__play__p__icons {
+  text-align: center;
+  padding: 0.5em;
+  border: 2px solid #717171;
+  border-radius: 50%;
+  margin: 1em;
+}
+.about__play .about__play__p .about__play__p__icons .fa-solid {
+  color: #fefefe;
+  height: 1.5em;
+  width: 1.5em;
 }
 
 .about__certificates {
@@ -706,14 +713,20 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #1B1B1B;
-  color: white;
+  color: #fefefe;
   overflow: hidden;
   gap: 1rem;
   padding-top: 0.5em;
-  padding-bottom: 1.5em;
+  padding-bottom: 2em;
+}
+.about__certificates .about__certificates__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .about__certificates .about__certificates-img {
   width: 40%;
+  margin-bottom: 1em;
 }
 
 .about__team {
@@ -721,7 +734,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #1B1B1B;
-  color: white;
+  color: #fefefe;
   overflow: hidden;
   padding-bottom: 2rem;
   padding-top: 0.5em;
@@ -731,7 +744,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #1B1B1B;
-  color: white;
+  color: #fefefe;
   overflow: hidden;
   margin-top: 2rem;
 }
@@ -751,7 +764,7 @@ body {
 }
 .about__testimonials .testimonials__read {
   font-size: 0.1em;
-  color: red;
+  color: #F60B0E;
   text-decoration: underline;
 }
 .about__testimonials .testimonials__card {
@@ -795,7 +808,7 @@ body {
 @media (min-width: 412px) {
   .about__certificates__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 95%;
@@ -807,22 +820,25 @@ body {
     margin-left: 1em;
     margin-right: 1em;
   }
+  .about__play__p {
+    width: 30%;
+  }
   .about__play__container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-  .about__play__container .about__play--p {
-    width: 30%;
-  }
   .about__certificates__container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    width: 35%;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+    gap: 2rem;
+    width: 40%;
+  }
+  .about__certificates-img {
+    width: 40%;
+    margin-bottom: 1em;
   }
   .about__team__container {
     display: flex;
