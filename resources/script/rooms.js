@@ -1,3 +1,5 @@
+
+
 function generateRoom(rooms) {
 
     // var tmp = readRooms();
@@ -81,11 +83,11 @@ function generateRoom(rooms) {
     document.getElementsByClassName('rooms__grid')[0].appendChild(conteneur);
 }
 
-function loadJS()
+async function loadJS()
 {
     let tmp;
     // read local JSON file in javascript
-    fetch("../resources/script/rooms.json")
+    await fetch("../resources/script/rooms.json")
         .then(function (response) {
         return response.json();
         })
@@ -93,9 +95,9 @@ function loadJS()
             console.log ("in then : "+data);
             // return data;
             tmp = data;
-            for (let i = 0; i < data.length; i++) {
-                generateRoom(data[i]);
-            }
+            // for (let i = 0; i < data.length; i++) {
+            //     generateRoom(data[i]);
+            // }
         })
                         
         return tmp;
@@ -103,21 +105,66 @@ function loadJS()
 }
 
 
+async function init(difficult)
+{
+    let data = await loadJS();
+    let min = 1;
+    let max = 5;
+    // delet space of text
+    difficult = difficult.trim();
+
+    switch (difficult) {
+        case "Easy":
+            // console.log("Easy");
+            max = 2;
+            break;
+        case "Normal":
+            // console.log("Normal");
+            min = 2;
+            max = 4;
+            break;
+        case "Hard":
+            // console.log("Hard");
+            min = 4;
+            break;
+        default:
+            // console.log("All");
+            min = 1;
+            max = 5;
+            break;
+    }
+
+    //clear rooms__grid
+    document.getElementsByClassName('rooms__grid')[0].innerHTML = '';
+
+    for (i = 0, j = 0; i < data.length && j<8; i++) {
+
+        if (data[i].difficulty >= min && data[i].difficulty <= max) {
+        generateRoom(data[i]);
+        j++;
+        }
+    }
+}
 
 
+init("All");
 
-// console.log();
-// init();
+//event listener for radio button
 
-let data = loadJS();
+let radio = document.getElementsByClassName('rooms__filter__button');
+for (let i = 0; i < radio.length; i++) {
+    radio[i].addEventListener('click', function () {
+        // reset class button
+        for (let j = 0; j < radio.length; j++) {
+            radio[j].classList.remove('rooms__filter__button--active');
+        }
+        // add class button
+        this.classList.add('rooms__filter__button--active');
+        
+        // take the text 
+        
+        let difficult = this.textContent;
 
-//async await
-
-
-console.log("out : "+data);
-// generateRoom(data[1]);
-// console.log("c'est moi");
-// console.log("ici : "+data);
-// generateRoom(data);
-// readRooms();
-// generateRoom()
+        init(difficult);
+    });
+}
