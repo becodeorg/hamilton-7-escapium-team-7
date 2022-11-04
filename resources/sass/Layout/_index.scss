@@ -2,6 +2,20 @@
 
 body {
     width: 100%;
+    h3 {
+        font-size: 0.5rem;
+        color: white;
+
+    }
+
+    h3:hover {
+       color: red;
+       
+    }
+}
+
+.index__instagram {
+    background-color: $darkestBackground;
 }
 
 .index__featured {
@@ -12,6 +26,7 @@ body {
   padding-top: 3em;
   padding-bottom: 3em;
   gap:2em;
+  color: white;
   
     &__article {
         width: 100%;
@@ -64,7 +79,7 @@ body {
     gap:2em;
     padding-left: 3.9em;
     vertical-align: middle;
-    height: 25rem;
+    height: 28rem;
     gap: 4rem;
     background-image: url(/resources/resources/images/gallery/room-7-360x222.jpg);
     background-repeat: no-repeat;
@@ -150,6 +165,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: $darkestBackground;
+    color: white;
 
 }
 
@@ -317,6 +334,7 @@ body {
 
 
     .index__instagram {
+        background-color: $darkestBackground;
         
     .photo {
         width: 50%;
@@ -325,4 +343,25 @@ body {
         }
     }
 }
+}
+
+///carousel buttons
+/// 
+
+
+.carousel-control-next-icon {
+
+    position: absolute;
+    bottom: 0rem;
+    background-color: $darkestBackground;
+    border-radius: 20%;
+}
+
+.carousel-control-prev-icon {
+    position: absolute;
+    bottom: 0rem;
+    position: absolute;
+    bottom: 0rem;
+    background-color: $darkestBackground;
+    border-radius: 20%;
 }
