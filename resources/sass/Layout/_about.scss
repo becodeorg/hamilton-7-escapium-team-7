@@ -169,9 +169,10 @@
         align-items: center;
     }
 
+    
+
     &__answer {
-        font-size: 0.7em;
-        font-weight: bolder;
+        font-size: 0.8em;
         width: 100%;
         font-family: $paragraphs-font;
         display:none;
@@ -191,7 +192,7 @@
         padding-left: 2rem;
 
         .about__FAQ-question{
-            font-size: 0.7em;
+            font-size: 0.8em;
             font-weight: bolder;
             font-family: $paragraphs-font;
             
@@ -257,6 +258,18 @@
         align-items: center;
         justify-content: center;
         width: 50%;
+    }
+
+    .about__FAQ-question{
+        font-size: 1.5em!important;
+       margin-left: 5.5rem;
+        
+    }
+
+    .about__FAQ__answer {
+        font-size: 1em!important;
+        padding-left: 5.5rem;
+        width: 80%;
     }
 }
 
