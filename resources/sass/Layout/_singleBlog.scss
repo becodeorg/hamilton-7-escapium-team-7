@@ -1,0 +1,152 @@
+
+.container {
+    padding-bottom: 2rem;
+ 
+}
+
+.arrow-1 {
+    width:40px;
+    height:15px;
+    display: flex;
+  }
+  .arrow-1:before {
+    content: "";
+    background: currentColor;
+    width:15px;
+    clip-path: polygon(0 10px,calc(100% - 15px) 10px,calc(100% - 15px) 0,100% 50%,calc(100% - 15px) 100%,calc(100% - 15px) calc(100% - 10px),0 calc(100% - 10px));
+    animation: a1 1.5s infinite linear;
+  }
+  @keyframes a1 {
+    90%,100%{flex-grow: 1}
+  }
+
+
+.author {
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    &__card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1em;
+        align-items: center;
+
+        &--writer {
+            @extend .author__card;
+            border: dotted 1px variable.$globalFontColor;
+            padding: 1em 1.5em 1em 1.5em;
+            width: 90%;
+
+            &__description {
+                font-family: $paragraphs-font;
+                font-size: xx-small;
+                margin-left: 3.5rem;
+                display: none;
+                @media only screen and (min-width: variable.$desktop)
+                {
+                    display:block;
+    
+                }
+
+            }
+        }
+
+        &__team {
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+            margin-left: -5em;
+            margin-top: 1em;
+            @media only screen and (min-width: variable.$desktop)
+            {
+                display:none;
+
+            }
+        }
+
+        &__name--top {
+            font-family: $paragraphs-font;
+            font-weight: bold;
+
+            &--team {
+                @extend .author__card__name--top;
+                text-transform: uppercase;
+                font-size: x-small;
+            }
+        }
+
+        &__name--bot {
+            font-family: $paragraphs-font;
+            font-size: xx-small;
+            color: variable.$globalFontColor;
+        }
+
+        &__img {
+            border-radius: 50%;
+            height: 3rem;
+            
+        }
+
+        .fa-envelope-square {
+            margin-left: 7em;
+        }
+    }
+
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+
+    &__container {
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+
+    &__comment {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &.answer {
+            @media only screen and (min-width: variable.$desktop)
+            {
+                width: 80%;
+                margin-left: 9rem;
+
+            }
+        }
+
+        &.answer2 {
+            @media only screen and (min-width: variable.$desktop)
+            {
+                width: 75%;
+                margin-left: 11.5rem;
+                border-left: solid red 3px;
+                padding-left: 1em;
+            }
+        }
+
+        &__reply {
+            font-size: 0.1em;
+            letter-spacing: 1em;
+        }
+    }
+
+    }
+}
+
+
+@media only screen and (min-width: variable.$desktop)
+{
+    .fa-envelope-square {
+        margin-left: 30em!important;
+    }
+
+}
