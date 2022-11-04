@@ -13,7 +13,6 @@
     padding-left: 3.9em;
     vertical-align: middle;
     
-
     .fa {
         color: $red;
         padding-right: 1.5em;
@@ -47,19 +46,17 @@
             flex-direction: column;
             gap: 1em;
 
-        .index__input {
-            background-color: $darkBackground;
-            color: $globalFontColor;
-            border-bottom: solid $globalFontColor;
-
-            &--big{
+            .index__input {
                 background-color: $darkBackground;
+                color: $globalFontColor;
                 border-bottom: solid $globalFontColor;
+
+                &--big{
+                    background-color: $darkBackground;
+                    border-bottom: solid $globalFontColor;
+                }
             }
         }
-
-        }
-    
     }
 }
 
@@ -81,19 +78,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .index__ready {
     background-color: $whiteBackground;
     display: flex;
@@ -107,27 +91,24 @@
     padding-right: 1em;
 
     &__btn {
-            background-color: $red;
-            padding-top: 0.5em;
-            padding-bottom: 0.5em;
-            border-radius: 2em;
-            font-family: "Hind", sans-serif;
-            width: 8em;
-                
-                &--link {
-                    text-decoration: none;
-                    color: $whiteBackground;
-                    font-size: 0.7em;
-                    font-weight: bold;
-                }
-            }
+        background-color: $red;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        border-radius: 2em;
+        font-family: "Hind", sans-serif;
+        width: 8em;                
+        &--link {
+            text-decoration: none;
+            color: $whiteBackground;
+            font-size: 0.7em;
+            font-weight: bold;
+        }
+    }
 }
 
 
 
 @media only screen and (min-width: $tablet) {
-
-
     .index__container__mapTouch {
         display: flex;
         flex-direction: row;
@@ -148,8 +129,6 @@
         height: 25rem;
         gap: 4rem;
     }
-
-
 }
 
 @media only screen and (min-width: $desktop) {
