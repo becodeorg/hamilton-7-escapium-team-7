@@ -15,10 +15,9 @@
     
 
     .fa {
-        color: red;
+        color: $red;
         padding-right: 1.5em;
         width: 1em;
-       
     }
 }
 
@@ -30,14 +29,14 @@
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    color: white;
+    color: $whiteBackground ;
     padding-bottom: 2rem;
     gap:2em;
     padding-left: 1em;
     padding-right: 1em;
 
     .index__infos__form {
-        color: black;
+        color: $darkestBackground;
         display: flex;
         flex-direction: column;
         gap: 2em;
@@ -75,7 +74,7 @@
 
     .index__infos__btn--link {
         text-decoration: none;
-        color: white;
+        color: $whiteBackground;
         font-size: 0.7em;
         font-weight: bold;
         }
@@ -96,19 +95,19 @@
 
 
 .index__ready {
-    background-color: white;
+    background-color: $whiteBackground;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: $whiteBackground;
     padding-bottom: 2rem;
     gap:2em;
     padding-left: 1em;
     padding-right: 1em;
 
     &__btn {
-            background-color: red;
+            background-color: $red;
             padding-top: 0.5em;
             padding-bottom: 0.5em;
             border-radius: 2em;
@@ -117,7 +116,7 @@
                 
                 &--link {
                     text-decoration: none;
-                    color: white;
+                    color: $whiteBackground;
                     font-size: 0.7em;
                     font-weight: bold;
                 }
@@ -133,15 +132,15 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-       justify-content: center;
+        justify-content: center;
 
-       .index__infos {
-        width: 50%;
-       }
+        .index__infos {
+            width: 50%;
+        }
 
-       .index__map {
-        width: 50%;
-       }
+        .index__map {
+            width: 50%;
+        }
         
     }
 

@@ -1393,7 +1393,7 @@ body {
   vertical-align: middle;
 }
 .index__who .fa {
-  color: red;
+  color: #F60B0E;
   padding-right: 1.5em;
   width: 1em;
 }
@@ -1404,14 +1404,14 @@ body {
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  color: white;
+  color: #fefefe;
   padding-bottom: 2rem;
   gap: 2em;
   padding-left: 1em;
   padding-right: 1em;
 }
 .index__infos .index__infos__form {
-  color: black;
+  color: #1B1B1B;
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -1443,25 +1443,25 @@ body {
 }
 .index__infos__btn .index__infos__btn--link {
   text-decoration: none;
-  color: white;
+  color: #fefefe;
   font-size: 0.7em;
   font-weight: bold;
 }
 
 .index__ready {
-  background-color: white;
+  background-color: #fefefe;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #fefefe;
   padding-bottom: 2rem;
   gap: 2em;
   padding-left: 1em;
   padding-right: 1em;
 }
 .index__ready__btn {
-  background-color: red;
+  background-color: #F60B0E;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   border-radius: 2em;
@@ -1470,7 +1470,7 @@ body {
 }
 .index__ready__btn--link {
   text-decoration: none;
-  color: white;
+  color: #fefefe;
   font-size: 0.7em;
   font-weight: bold;
 }
