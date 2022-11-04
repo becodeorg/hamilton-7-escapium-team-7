@@ -161,10 +161,26 @@
 
 
 .about__FAQ {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 2rem;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__answer {
+        font-size: 0.7em;
+        font-weight: bolder;
+        width: 100%;
+        font-family: $paragraphs-font;
+        display:none;
+
+        &.shown {
+            display:block;
+        }
+        
+    }
 
     .about__FAQ__container {
         display: flex;
@@ -172,10 +188,13 @@
         align-items: flex-start;
         margin-top: 2rem;
         gap: 1rem;
+        padding-left: 2rem;
 
         .about__FAQ-question{
-            font-size: 0.6em;
+            font-size: 0.7em;
             font-weight: bolder;
+            font-family: $paragraphs-font;
+            
         }
     }
 }
@@ -302,3 +321,4 @@
 //   }
 
  
+

@@ -24,3 +24,29 @@ menuHamburger.addEventListener('click',()=>{
         //     line.style.display= "block";
         // }
         // ))
+
+
+////FAQ
+
+const question = document.querySelectorAll(".about__FAQ-question");
+const answer = document.querySelectorAll(".about__FAQ__answer");
+
+question[0].addEventListener("click", () => {
+    answer[0].classList.toggle ("shown");
+})
+
+question[1].addEventListener("click", () => {
+    answer[1].classList.toggle ("shown");
+})
+question[2].addEventListener("click", () => {
+    answer[2].classList.toggle ("shown");
+})
+question[3].addEventListener("click", () => {
+    answer[3].classList.toggle ("shown");
+})
+question[4].addEventListener("click", () => {
+    answer[4].classList.toggle ("shown");
+})
+question[5].addEventListener("click", () => {
+    answer[5].classList.toggle ("shown");
+})

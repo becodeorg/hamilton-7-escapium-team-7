@@ -789,10 +789,22 @@ body {
 }
 
 .about__FAQ {
+  margin-bottom: 2rem;
+}
+.about__FAQ__header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2rem;
+}
+.about__FAQ__answer {
+  font-size: 0.7em;
+  font-weight: bolder;
+  width: 100%;
+  font-family: "Hind";
+  display: none;
+}
+.about__FAQ__answer.shown {
+  display: block;
 }
 .about__FAQ .about__FAQ__container {
   display: flex;
@@ -800,10 +812,12 @@ body {
   align-items: flex-start;
   margin-top: 2rem;
   gap: 1rem;
+  padding-left: 2rem;
 }
 .about__FAQ .about__FAQ__container .about__FAQ-question {
-  font-size: 0.6em;
+  font-size: 0.7em;
   font-weight: bolder;
+  font-family: "Hind";
 }
 
 @media (min-width: 412px) {
@@ -1587,6 +1601,10 @@ body h3:hover {
   }
   .index__container__mapTouch .index__map {
     width: 50%;
+  }
+  .index__who {
+    height: 25rem;
+    gap: 4rem;
   }
 }
 @media only screen and (min-width: 1920px) {
