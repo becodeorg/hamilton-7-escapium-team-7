@@ -73,12 +73,10 @@ body {
 
     
     
-
     .fa {
-        color: red;
+        color: $red;
         padding-right: 1.5em;
         width: 1em;
-       
     }
 }
 
@@ -90,14 +88,14 @@ body {
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    color: white;
+    color: $whiteBackground ;
     padding-bottom: 2rem;
     gap:2em;
     padding-left: 1em;
     padding-right: 1em;
 
     .index__infos__form {
-        color: black;
+        color: $darkestBackground;
         display: flex;
         flex-direction: column;
         gap: 2em;
@@ -108,19 +106,17 @@ body {
             flex-direction: column;
             gap: 1em;
 
-        .index__input {
-            background-color: $darkBackground;
-            color: $globalFontColor;
-            border-bottom: solid $globalFontColor;
-
-            &--big{
+            .index__input {
                 background-color: $darkBackground;
+                color: $globalFontColor;
                 border-bottom: solid $globalFontColor;
+
+                &--big{
+                    background-color: $darkBackground;
+                    border-bottom: solid $globalFontColor;
+                }
             }
         }
-
-        }
-    
     }
 }
 
@@ -135,7 +131,7 @@ body {
 
     .index__infos__btn--link {
         text-decoration: none;
-        color: white;
+        color: $whiteBackground;
         font-size: 0.7em;
         font-weight: bold;
         }
@@ -163,32 +159,31 @@ body {
 
 
 .index__ready {
-    background-color: white;
+    background-color: $whiteBackground;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: $whiteBackground;
     padding-bottom: 2rem;
     gap:2em;
     padding-left: 1em;
     padding-right: 1em;
 
     &__btn {
-            background-color: red;
-            padding-top: 0.5em;
-            padding-bottom: 0.5em;
-            border-radius: 2em;
-            font-family: "Hind", sans-serif;
-            width: 8em;
-                
-                &--link {
-                    text-decoration: none;
-                    color: white;
-                    font-size: 0.7em;
-                    font-weight: bold;
-                }
-            }
+        background-color: $red;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        border-radius: 2em;
+        font-family: "Hind", sans-serif;
+        width: 8em;                
+        &--link {
+            text-decoration: none;
+            color: $whiteBackground;
+            font-size: 0.7em;
+            font-weight: bold;
+        }
+    }
 }
 
 
@@ -235,18 +230,22 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-       justify-content: center;
+        justify-content: center;
 
-       .index__infos {
-        width: 50%;
-       }
+        .index__infos {
+            width: 50%;
+        }
 
-       .index__map {
-        width: 50%;
-       }
+        .index__map {
+            width: 50%;
+        }
         
     }
 
+    .index__who {
+        height: 25rem;
+        gap: 4rem;
+    }
     
 
 
