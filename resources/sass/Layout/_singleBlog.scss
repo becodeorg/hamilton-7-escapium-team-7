@@ -1,5 +1,8 @@
 
-
+.container {
+    padding-bottom: 2rem;
+ 
+}
 
 .arrow-1 {
     width:40px;
@@ -27,6 +30,7 @@
     &__card {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 1em;
         align-items: center;
 
@@ -35,6 +39,19 @@
             border: dotted 1px variable.$globalFontColor;
             padding: 1em 1.5em 1em 1.5em;
             width: 90%;
+
+            &__description {
+                font-family: $paragraphs-font;
+                font-size: xx-small;
+                margin-left: 3.5rem;
+                display: none;
+                @media only screen and (min-width: variable.$desktop)
+                {
+                    display:block;
+    
+                }
+
+            }
         }
 
         &__team {
@@ -43,6 +60,11 @@
             gap: 1em;
             margin-left: -5em;
             margin-top: 1em;
+            @media only screen and (min-width: variable.$desktop)
+            {
+                display:none;
+
+            }
         }
 
         &__name--top {
@@ -85,12 +107,31 @@
         padding-top: 1rem;
         display: flex;
         flex-direction: column;
-        gap:1rem;
+        gap:2rem;
 
     &__comment {
         display: flex;
         flex-direction: column;
         gap: 1rem;
+
+        &.answer {
+            @media only screen and (min-width: variable.$desktop)
+            {
+                width: 80%;
+                margin-left: 9rem;
+
+            }
+        }
+
+        &.answer2 {
+            @media only screen and (min-width: variable.$desktop)
+            {
+                width: 75%;
+                margin-left: 11.5rem;
+                border-left: solid red 3px;
+                padding-left: 1em;
+            }
+        }
 
         &__reply {
             font-size: 0.1em;
@@ -99,4 +140,13 @@
     }
 
     }
+}
+
+
+@media only screen and (min-width: variable.$desktop)
+{
+    .fa-envelope-square {
+        margin-left: 30em!important;
+    }
+
 }

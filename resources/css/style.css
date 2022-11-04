@@ -1859,6 +1859,10 @@ body {
   }
 }
 
+.container {
+  padding-bottom: 2rem;
+}
+
 .arrow-1 {
   width: 40px;
   height: 15px;
@@ -1888,6 +1892,7 @@ body {
 .author__card, .author__card--writer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 1em;
   align-items: center;
 }
@@ -1896,12 +1901,28 @@ body {
   padding: 1em 1.5em 1em 1.5em;
   width: 90%;
 }
+.author__card--writer__description {
+  font-family: "Hind";
+  font-size: xx-small;
+  margin-left: 3.5rem;
+  display: none;
+}
+@media only screen and (min-width: 1920px) {
+  .author__card--writer__description {
+    display: block;
+  }
+}
 .author__card__team {
   display: flex;
   flex-direction: row;
   gap: 1em;
   margin-left: -5em;
   margin-top: 1em;
+}
+@media only screen and (min-width: 1920px) {
+  .author__card__team {
+    display: none;
+  }
 }
 .author__card__name--top, .author__card__name--top--team {
   font-family: "Hind";
@@ -1934,18 +1955,37 @@ body {
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 .comments__container__comment {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+@media only screen and (min-width: 1920px) {
+  .comments__container__comment.answer {
+    width: 80%;
+    margin-left: 9rem;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .comments__container__comment.answer2 {
+    width: 75%;
+    margin-left: 11.5rem;
+    border-left: solid red 3px;
+    padding-left: 1em;
+  }
+}
 .comments__container__comment__reply {
   font-size: 0.1em;
   letter-spacing: 1em;
 }
 
+@media only screen and (min-width: 1920px) {
+  .fa-envelope-square {
+    margin-left: 30em !important;
+  }
+}
 .pageBlogs {
   display: flex;
   flex-direction: column;
